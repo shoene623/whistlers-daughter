@@ -1,18 +1,28 @@
 "use client"
 
-import { useState } from "react"
+import { useActionState } from "react"
+import { useFormStatus } from "react-dom"
 import Image from "next/image"
-import { Check, Mail } from "lucide-react"
+import { Check, Mail, AlertCircle } from "lucide-react"
+import { joinWaitlist, type WaitlistState } from "@/app/actions/waitlist"
+
+const initialState: WaitlistState = { status: "idle", message: "" }
+
+function SubmitButton() {
+  const { pending } = useFormStatus()
+  return (
+    <button
+      type="submit"
+      disabled={pending}
+      className="rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-transform hover:scale-105 disabled:cursor-not-allowed disabled:opacity-60"
+    >
+      {pending ? "Joining..." : "Notify Me"}
+    </button>
+  )
+}
 
 export function BuySection() {
-  const [email, setEmail] = useState("")
-  const [submitted, setSubmitted] = useState(false)
-
-  function handleSubmit(e: React.FormEvent) {
-    e.preventDefault()
-    if (!email) return
-    setSubmitted(true)
-  }
+  const [state, formAction] = useActionState(joinWaitlist, initialState)
 
   return (
     <section id="buy" className="mx-auto max-w-6xl px-4 py-20 md:px-6 md:py-28">
@@ -40,34 +50,46 @@ export function BuySection() {
               <Mail className="size-4 text-primary" />
               Join the mailing list
             </h3>
-            {submitted ? (
+
+            {state.status === "success" ? (
               <p className="mt-3 flex items-center gap-2 text-sm font-medium text-primary">
-                <Check className="size-4" />
-                Thank you &mdash; you&apos;re on the list!
+                <Check className="size-4 shrink-0" />
+                {state.message}
               </p>
             ) : (
-              <form
-                onSubmit={handleSubmit}
-                className="mt-3 flex flex-col gap-3 sm:flex-row"
-              >
-                <label htmlFor="email" className="sr-only">
-                  Email address
-                </label>
-                <input
-                  id="email"
-                  type="email"
-                  required
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  placeholder="you@example.com"
-                  className="flex-1 rounded-full border border-input bg-background px-5 py-3 text-sm text-foreground outline-none focus:border-primary focus:ring-2 focus:ring-primary/20"
-                />
-                <button
-                  type="submit"
-                  className="rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-transform hover:scale-105"
-                >
-                  Notify Me
-                </button>
+              <form action={formAction} className="mt-3 flex flex-col gap-3">
+                <div className="flex flex-col gap-3 sm:flex-row">
+                  <label htmlFor="name" className="sr-only">
+                    Your name (optional)
+                  </label>
+                  <input
+                    id="name"
+                    name="name"
+                    type="text"
+                    placeholder="Your name (optional)"
+                    className="flex-1 rounded-full border border-input bg-background px-5 py-3 text-sm text-foreground outline-none focus:border-primary focus:ring-2 focus:ring-primary/20"
+                  />
+                </div>
+                <div className="flex flex-col gap-3 sm:flex-row">
+                  <label htmlFor="email" className="sr-only">
+                    Email address
+                  </label>
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    required
+                    placeholder="you@example.com"
+                    className="flex-1 rounded-full border border-input bg-background px-5 py-3 text-sm text-foreground outline-none focus:border-primary focus:ring-2 focus:ring-primary/20"
+                  />
+                  <SubmitButton />
+                </div>
+                {state.status === "error" && (
+                  <p className="flex items-center gap-2 text-sm font-medium text-accent">
+                    <AlertCircle className="size-4 shrink-0" />
+                    {state.message}
+                  </p>
+                )}
               </form>
             )}
           </div>
