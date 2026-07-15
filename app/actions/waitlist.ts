@@ -17,7 +17,7 @@ async function notifyAuthor(email: string, name: string) {
   try {
     const resend = new Resend(apiKey)
     await resend.emails.send({
-      from: "The Whistler's Daughter <onboarding@resend.dev>",
+      from: "The Whistler's Daughter <christine.hoene@lifesafeservices.com>",
       to: NOTIFY_TO,
       replyTo: email,
       subject: "New waitlist signup",
