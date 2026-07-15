@@ -3,6 +3,32 @@
 import { db } from "@/lib/db"
 import { waitlist } from "@/lib/db/schema"
 import { eq } from "drizzle-orm"
+import { Resend } from "resend"
+
+const NOTIFY_TO = "christine.hoene@lifesafeservices.com"
+
+async function notifyAuthor(email: string, name: string) {
+  const apiKey = process.env.RESEND_API_KEY
+  if (!apiKey) {
+    console.error("[v0] RESEND_API_KEY not set; skipping notification email")
+    return
+  }
+
+  try {
+    const resend = new Resend(apiKey)
+    await resend.emails.send({
+      from: "The Whistler's Daughter <onboarding@resend.dev>",
+      to: NOTIFY_TO,
+      replyTo: email,
+      subject: "New waitlist signup",
+      text: `A new reader joined the waitlist for The Whistler's Daughter.\n\nName: ${
+        name || "(not provided)"
+      }\nEmail: ${email}`,
+    })
+  } catch (error) {
+    console.error("[v0] waitlist notification email failed:", error)
+  }
+}
 
 export type WaitlistState = {
   status: "idle" | "success" | "error"
@@ -39,6 +65,8 @@ export async function joinWaitlist(
     }
 
     await db.insert(waitlist).values({ email, name: name || null })
+
+    await notifyAuthor(email, name)
 
     return {
       status: "success",
