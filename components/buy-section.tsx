@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import Image from "next/image"
-import { BookOpen, Check, Mail } from "lucide-react"
+import { Check, Mail } from "lucide-react"
 
 export function BuySection() {
   const [email, setEmail] = useState("")
@@ -29,22 +29,13 @@ export function BuySection() {
 
         <div>
           <h2 className="text-balance font-serif text-3xl font-bold text-foreground md:text-4xl">
-            Get your copy of The Whistler&apos;s Daughter
+            Be the first to read The Whistler&apos;s Daughter
           </h2>
           <p className="mt-4 text-pretty leading-relaxed text-muted-foreground">
-            Available soon in print and eBook. Order the book, or join the list
-            to be the first to know when it&apos;s released.
+            Join the list to be the first to know when the book is available.
           </p>
 
-          <a
-            href="#"
-            className="mt-6 inline-flex items-center gap-2 rounded-full bg-accent px-7 py-3.5 text-sm font-semibold text-accent-foreground shadow-lg shadow-accent/20 transition-transform hover:scale-105"
-          >
-            <BookOpen className="size-4" />
-            Order Now
-          </a>
-
-          <div className="mt-8 border-t border-border pt-8">
+          <div className="mt-6">
             <h3 className="flex items-center gap-2 font-semibold text-foreground">
               <Mail className="size-4 text-primary" />
               Join the mailing list

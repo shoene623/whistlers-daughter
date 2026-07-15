@@ -34,13 +34,13 @@ export function Hero() {
               className="inline-flex items-center gap-2 rounded-full bg-accent px-7 py-3.5 text-sm font-semibold text-accent-foreground shadow-lg shadow-accent/20 transition-transform hover:scale-105"
             >
               <BookOpen className="size-4" />
-              Get the Book
+              Join the List
             </a>
             <a
               href="#book"
               className="inline-flex items-center gap-2 rounded-full border border-border px-7 py-3.5 text-sm font-semibold text-foreground transition-colors hover:bg-secondary"
             >
-              Read an Excerpt
+              About the Book
             </a>
           </div>
 

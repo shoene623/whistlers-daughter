@@ -7,7 +7,6 @@ const navLinks = [
   { href: "#book", label: "The Book" },
   { href: "#adventures", label: "Adventures" },
   { href: "#author", label: "The Author" },
-  { href: "#praise", label: "Praise" },
   { href: "#connect", label: "Connect" },
 ]
 
@@ -40,7 +39,7 @@ export function SiteHeader() {
             href="#buy"
             className="rounded-full bg-accent px-5 py-2 text-sm font-semibold text-accent-foreground transition-transform hover:scale-105"
           >
-            Get the Book
+            Join the List
           </a>
         </nav>
 
@@ -73,7 +72,7 @@ export function SiteHeader() {
               onClick={() => setOpen(false)}
               className="rounded-full bg-accent px-5 py-2.5 text-center text-sm font-semibold text-accent-foreground"
             >
-              Get the Book
+              Join the List
             </a>
           </div>
         </nav>
