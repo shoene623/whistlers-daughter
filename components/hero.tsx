@@ -14,10 +14,6 @@ export function Hero() {
             A New Memoir
           </span>
 
-          <p className="mt-4 inline-flex rounded-full border border-primary/20 bg-background/80 px-4 py-2 text-sm font-semibold text-primary shadow-sm">
-            This website is now editable via ChatGPT.
-          </p>
-
           <h1 className="mt-6 text-balance font-serif text-4xl font-bold leading-[1.05] tracking-tight text-foreground md:text-6xl">
             The Whistler&apos;s Daughter
           </h1>
