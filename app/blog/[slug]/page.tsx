@@ -1,0 +1,70 @@
+import type { Metadata } from "next"
+import Link from "next/link"
+import { ArrowLeft } from "lucide-react"
+import { notFound } from "next/navigation"
+import { SiteFooter } from "@/components/site-footer"
+import { SiteHeader } from "@/components/site-header"
+import { blogPosts, getBlogPost } from "@/lib/blog-posts"
+
+type PostPageProps = {
+  params: Promise<{ slug: string }>
+}
+
+export function generateStaticParams() {
+  return blogPosts.map((post) => ({ slug: post.slug }))
+}
+
+export async function generateMetadata({ params }: PostPageProps): Promise<Metadata> {
+  const { slug } = await params
+  const post = getBlogPost(slug)
+  if (!post) return {}
+  return {
+    title: `${post.title} | The Whistler's Daughter`,
+    description: post.excerpt,
+  }
+}
+
+export default async function PostPage({ params }: PostPageProps) {
+  const { slug } = await params
+  const post = getBlogPost(slug)
+  if (!post) notFound()
+
+  return (
+    <>
+      <SiteHeader />
+      <main>
+        <article>
+          <header className="border-b border-border bg-secondary/40">
+            <div className="mx-auto max-w-3xl px-4 py-16 md:px-6 md:py-24">
+              <Link href="/blog" className="inline-flex items-center gap-2 text-sm font-semibold text-primary">
+                <ArrowLeft className="size-4" />
+                Back to the blog
+              </Link>
+              <div className="mt-10 flex flex-wrap items-center gap-3 text-sm text-muted-foreground">
+                <span className="font-semibold uppercase tracking-[0.15em] text-accent">{post.category}</span>
+                <span aria-hidden="true">•</span>
+                <time>{post.date}</time>
+                <span aria-hidden="true">•</span>
+                <span>{post.readTime}</span>
+              </div>
+              <h1 className="mt-5 text-balance font-serif text-4xl font-bold leading-tight text-foreground md:text-6xl">
+                {post.title}
+              </h1>
+              <p className="mt-6 text-pretty text-xl leading-relaxed text-muted-foreground">{post.excerpt}</p>
+            </div>
+          </header>
+          <div className="mx-auto max-w-3xl px-4 py-14 md:px-6 md:py-20">
+            <div className="space-y-7">
+              {post.paragraphs.map((paragraph) => (
+                <p key={paragraph} className="text-pretty text-lg leading-8 text-foreground/85 md:text-xl md:leading-9">
+                  {paragraph}
+                </p>
+              ))}
+            </div>
+          </div>
+        </article>
+      </main>
+      <SiteFooter />
+    </>
+  )
+}
