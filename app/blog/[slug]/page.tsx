@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import Image from "next/image"
 import Link from "next/link"
 import { ArrowLeft } from "lucide-react"
 import { notFound } from "next/navigation"
@@ -29,6 +30,11 @@ export default async function PostPage({ params }: PostPageProps) {
   const post = getBlogPost(slug)
   if (!post) notFound()
 
+  const content =
+    post.content ??
+    post.paragraphs?.map((text) => ({ type: "paragraph" as const, text })) ??
+    []
+
   return (
     <>
       <SiteHeader />
@@ -54,12 +60,55 @@ export default async function PostPage({ params }: PostPageProps) {
             </div>
           </header>
           <div className="mx-auto max-w-3xl px-4 py-14 md:px-6 md:py-20">
+            {post.image && (
+              <figure className="mb-12">
+                <div className="overflow-hidden rounded-2xl border border-border bg-secondary shadow-sm">
+                  <Image
+                    src={post.image}
+                    alt={post.imageAlt ?? ""}
+                    width={800}
+                    height={533}
+                    className="h-auto w-full object-cover"
+                    priority
+                  />
+                </div>
+                {post.imageCaption && (
+                  <figcaption className="mt-3 text-center text-sm text-muted-foreground">
+                    {post.imageCaption}
+                  </figcaption>
+                )}
+              </figure>
+            )}
             <div className="space-y-7">
-              {post.paragraphs.map((paragraph) => (
-                <p key={paragraph} className="text-pretty text-lg leading-8 text-foreground/85 md:text-xl md:leading-9">
-                  {paragraph}
-                </p>
-              ))}
+              {content.map((block, index) => {
+                if (block.type === "heading") {
+                  return (
+                    <h2
+                      key={index}
+                      className="pt-8 font-serif text-3xl font-bold leading-tight text-foreground md:text-4xl"
+                    >
+                      {block.text}
+                    </h2>
+                  )
+                }
+
+                if (block.type === "quote") {
+                  return (
+                    <blockquote
+                      key={index}
+                      className="border-l-4 border-accent bg-secondary/50 px-6 py-5 font-serif text-xl font-semibold leading-relaxed text-foreground md:text-2xl"
+                    >
+                      {block.text}
+                    </blockquote>
+                  )
+                }
+
+                return (
+                  <p key={index} className="text-pretty text-lg leading-8 text-foreground/85 md:text-xl md:leading-9">
+                    {block.text}
+                  </p>
+                )
+              })}
             </div>
           </div>
         </article>
