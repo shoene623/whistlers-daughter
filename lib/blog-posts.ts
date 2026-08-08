@@ -1,6 +1,9 @@
 export type BlogContentBlock = {
-  type: "paragraph" | "heading" | "quote"
+  type: "paragraph" | "heading" | "quote" | "image"
   text: string
+  image?: string
+  imageAlt?: string
+  imageCaption?: string
 }
 
 export type BlogPost = {
@@ -18,6 +21,67 @@ export type BlogPost = {
 }
 
 export const blogPosts: BlogPost[] = [
+  {
+    slug: "the-chalkboard-by-the-beach-walkway",
+    title: "The Chalkboard by the Beach Walkway: Where the Book’s Quotes Really Came From",
+    excerpt:
+      "Long before the chapter epigraphs, there was a beat-up sandwich board, a piece of chalk, and a weekly love letter to strangers walking toward the ocean.",
+    date: "August 8, 2026",
+    category: "Behind the Book",
+    readTime: "4 min read",
+    image: "/images/chalkboard-audrey-hepburn.jpeg",
+    imageAlt:
+      "A colorful chalkboard featuring the Audrey Hepburn quote: Nothing is impossible, the word itself says I’m possible.",
+    imageCaption: "One of the weekly quotes that greeted people on their walk to the beach.",
+    content: [
+      {
+        type: "paragraph",
+        text: "Every chapter of *The Whistler’s Daughter* opens with a quote. Readers who get an early copy sometimes ask if I sat down with a book of famous quotations and picked the best twenty-six. I didn’t. They came from a sandwich board on a sidewalk.",
+      },
+      {
+        type: "paragraph",
+        text: "For a while, I lived along a walkway that fed straight onto the beach. Every day, a steady stream of people passed by—dog walkers, joggers, moms pushing strollers, tourists still blinking in the sun, people clearly having a rough morning who needed the ocean more than the rest of us. I watched that parade go by for weeks before it occurred to me that I could do something small for it.",
+      },
+      {
+        type: "paragraph",
+        text: "So I bought a big chalkboard—the kind restaurants put out front to advertise the soup of the day—and set it up right where the walkway met the sidewalk. Once a week, I’d chalk up a quote. Nothing fancy. Just something that had stuck with me, something that felt like it might land on the right person on the right morning.",
+      },
+      {
+        type: "image",
+        text: "A chalkboard near the beach featuring an Isaac Newton quote about the ocean.",
+        image: "/images/chalkboard-isaac-newton.jpeg",
+        imageAlt: "A colorful chalkboard reading: What I know is a drop. What I don’t know is an ocean.",
+        imageCaption: "A little perspective for the walk to the water.",
+      },
+      {
+        type: "paragraph",
+        text: "I picked quotes the way you’d pick a song for a friend having a hard week—less about being profound, more about being *useful*. Something to chew on during the walk to the water. Something to carry back.",
+      },
+      {
+        type: "paragraph",
+        text: "I never expected anyone to notice. But people did. Neighbors started timing their walks around it. Someone told me once that she changed her whole morning route just to see what the board said that week. A few people started sending me quotes they liked, hoping I’d chalk them up next.",
+      },
+      {
+        type: "paragraph",
+        text: "It became this strange, low-key ritual—equal parts creative outlet and love letter to strangers. I was choosing new sports every year by then, chasing that same restless “one more thing” energy in the rest of my life. The chalkboard was quieter than wing-walking or ice climbing, but it scratched the same itch: give people something small and unexpected that might change their day, even a little.",
+      },
+      {
+        type: "image",
+        text: "A colorful Winnie-the-Pooh quote on the beach walkway chalkboard.",
+        image: "/images/chalkboard-winnie-the-pooh.jpeg",
+        imageAlt: "A colorful chalkboard reading: You are braver than you believe, stronger than you seem, smarter than you think.",
+        imageCaption: "The board became a quiet weekly encouragement for neighbors and strangers.",
+      },
+      {
+        type: "paragraph",
+        text: "When it came time to write the book, and I got to the end of each chapter, I kept circling back to that stack of favorite quotes—some from the board, some I’d collected since. It felt right to let each chapter open the way each week on the walkway used to: with one sentence, meant to set the tone for what came next.",
+      },
+      {
+        type: "paragraph",
+        text: "So if a chapter epigraph ever feels like it’s speaking directly to you—that’s not an accident. That’s the whole point. It’s the same thing I was going for with a piece of chalk and a beat-up sandwich board, years before any of this was a book at all.",
+      },
+    ],
+  },
   {
     slug: "the-year-the-mountain-said-no",
     title: "The Year the Mountain Said No: What the Appalachian Trail Taught the Adventure Girls",
