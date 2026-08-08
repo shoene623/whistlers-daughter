@@ -11,6 +11,16 @@ type PostPageProps = {
   params: Promise<{ slug: string }>
 }
 
+function renderInlineText(text: string) {
+  return text.split(/(\*[^*]+\*)/g).map((part, index) =>
+    part.startsWith("*") && part.endsWith("*") ? (
+      <em key={index}>{part.slice(1, -1)}</em>
+    ) : (
+      part
+    ),
+  )
+}
+
 export function generateStaticParams() {
   return blogPosts.map((post) => ({ slug: post.slug }))
 }
@@ -87,8 +97,29 @@ export default async function PostPage({ params }: PostPageProps) {
                       key={index}
                       className="pt-8 font-serif text-3xl font-bold leading-tight text-foreground md:text-4xl"
                     >
-                      {block.text}
+                      {renderInlineText(block.text)}
                     </h2>
+                  )
+                }
+
+                if (block.type === "image" && block.image) {
+                  return (
+                    <figure key={index} className="py-6">
+                      <div className="mx-auto max-w-xl overflow-hidden rounded-2xl border border-border bg-secondary shadow-sm">
+                        <Image
+                          src={block.image}
+                          alt={block.imageAlt ?? block.text}
+                          width={720}
+                          height={960}
+                          className="h-auto w-full object-cover"
+                        />
+                      </div>
+                      {block.imageCaption && (
+                        <figcaption className="mt-3 text-center text-sm text-muted-foreground">
+                          {block.imageCaption}
+                        </figcaption>
+                      )}
+                    </figure>
                   )
                 }
 
@@ -98,14 +129,14 @@ export default async function PostPage({ params }: PostPageProps) {
                       key={index}
                       className="border-l-4 border-accent bg-secondary/50 px-6 py-5 font-serif text-xl font-semibold leading-relaxed text-foreground md:text-2xl"
                     >
-                      {block.text}
+                      {renderInlineText(block.text)}
                     </blockquote>
                   )
                 }
 
                 return (
                   <p key={index} className="text-pretty text-lg leading-8 text-foreground/85 md:text-xl md:leading-9">
-                    {block.text}
+                    {renderInlineText(block.text)}
                   </p>
                 )
               })}
