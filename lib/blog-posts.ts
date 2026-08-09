@@ -22,6 +22,59 @@ export type BlogPost = {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "the-climb-that-didnt-make-the-book-mt-whitneys-east-face",
+    title: "The Climb That Didn’t Make the Book: Mt. Whitney’s East Face",
+    excerpt:
+      "A fifty-two-pound pack, thirteen pitches of Sierra granite, and the Mt. Whitney climb that never found room in the book.",
+    date: "August 9, 2026",
+    category: "Beyond the Book",
+    readTime: "4 min read",
+    image: "/images/mt-whitney-east-face.jpeg",
+    imageAlt:
+      "Kippy Hoene climbing the exposed granite of Mt. Whitney’s East Face while secured by a rope.",
+    imageCaption: "Climbing straight up the side of Mt. Whitney.",
+    content: [
+      {
+        type: "paragraph",
+        text: "Years later, I decided to cash in all that practice on a bigger canvas: the East Face of Mt. Whitney, the highest peak in the lower 48. The plan mixed climbing and mountaineering—thirteen pitches after a load-bearing approach, high, cold, and honest. Our guide, Jeff, issued the standard gear and a pack that hit fifty-two pounds. “Same weight for everyone,” he said. “We adapt as we go.” In my experience, *adapt* is a theory that dies at the first steep section, but I saved that speech for a memoir I’d apparently one day write.",
+      },
+      {
+        type: "image",
+        text: "Kippy carrying a large expedition pack during the approach to Mt. Whitney.",
+        image: "/images/mt-whitney-approach.jpg",
+        imageAlt: "Kippy Hoene carrying a large red expedition backpack during the Mt. Whitney approach.",
+        imageCaption: "The fifty-two-pound pack: same weight for everyone.",
+      },
+      {
+        type: "paragraph",
+        text: "The approach was a study in contrasts—wildflowers and willows giving way to talus and ledges that felt like walking a curb on the edge of the sky. Statistics say only a tiny fraction of Whitney climbers die each year, which is comforting right up until you remember that most of them took the easier route. We camped at Iceberg Lake, 12,621 feet up: bitterly cold, nose-to-toes in a tent with a stranger named Don, and not a minute of sleep despite some pharmaceutical optimism.",
+      },
+      {
+        type: "image",
+        text: "Climbers crossing an exposed granite ledge on Mt. Whitney.",
+        image: "/images/mt-whitney-ledge.jpg",
+        imageAlt: "Three climbers wearing backpacks carefully cross a narrow granite ledge high above the valley.",
+        imageCaption: "The approach included ledges that felt like walking a curb on the edge of the sky.",
+      },
+      {
+        type: "paragraph",
+        text: "Morning brought sticky Sierra granite—white, grippy, perfect. Jeff led, Don followed, I cleaned gear behind them. Pitch 7’s “Fresh Air Traverse” was a postcard of exposure. I loved it. Don froze. To prove the rope would hold, I did the dumbest smart thing I’ve ever done: pushed off into open air, swung out on the line, and chirped, “See? Safe!” Don turned the color of printer paper. Lesson learned—sometimes words are better than demonstrations.",
+      },
+      {
+        type: "paragraph",
+        text: "Pitch 8 handed us a run of chimneys: back pressed one way, feet braced the other, hauling the pack up ahead of you like a disobedient suitcase. Each one was its own riddle to solve with your whole body. We topped out into a chorus of startled hikers—most people arrive at that summit by trail, not by climbing straight up the side of it. “Where did you come from?” someone asked. “The side,” I grinned.",
+      },
+      {
+        type: "paragraph",
+        text: "By then we were spent, the tent felt impossibly small, and the idea of another sleepless night at altitude sounded worse than just heading down in the dark. Jeff argued for safety and rest. Don and I argued for headlamps and momentum. Two against one won out. Night hiking tasted different up there—pine, cold air, and a sky so star-stamped it felt almost generous, like it knew we’d earned the view. We made it down fine: legs empty, spirits full.",
+      },
+      {
+        type: "paragraph",
+        text: "This one didn’t end up in the book—there simply wasn’t room for every mountain. But it’s one of the climbs I think about most, so it felt right to give it a home here instead.",
+      },
+    ],
+  },
+  {
     slug: "the-chalkboard-by-the-beach-walkway",
     title: "The Chalkboard by the Beach Walkway: Where the Book’s Quotes Really Came From",
     excerpt:
