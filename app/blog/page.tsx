@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import Image from "next/image"
 import Link from "next/link"
 import { ArrowRight } from "lucide-react"
 import { SiteFooter } from "@/components/site-footer"
@@ -36,8 +37,24 @@ export default function BlogPage() {
             {blogPosts.map((post) => (
               <article
                 key={post.slug}
-                className="group rounded-2xl border border-border bg-card p-7 transition-shadow hover:shadow-lg md:p-10"
+                className="group overflow-hidden rounded-2xl border border-border bg-card transition-shadow hover:shadow-lg"
               >
+                {post.image && (
+                  <Link
+                    href={`/blog/${post.slug}`}
+                    aria-label={`Read ${post.title}`}
+                    className="block overflow-hidden border-b border-border bg-secondary"
+                  >
+                    <Image
+                      src={post.image}
+                      alt={post.imageAlt ?? ""}
+                      width={1200}
+                      height={675}
+                      className="aspect-[16/9] w-full object-cover transition-transform duration-500 group-hover:scale-[1.02]"
+                    />
+                  </Link>
+                )}
+                <div className="p-7 md:p-10">
                 <div className="flex flex-wrap items-center gap-3 text-sm text-muted-foreground">
                   <span className="font-semibold uppercase tracking-[0.15em] text-accent">
                     {post.category}
@@ -62,6 +79,7 @@ export default function BlogPage() {
                   Read the story
                   <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
                 </Link>
+                </div>
               </article>
             ))}
           </div>
