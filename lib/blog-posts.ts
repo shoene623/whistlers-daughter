@@ -22,6 +22,56 @@ export type BlogPost = {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "when-i-stopped-being-embarrassed",
+    title: "When I Stopped Being Embarrassed",
+    excerpt:
+      "What learning alongside much younger athletes taught me about belonging, pride, and being willing to begin again.",
+    date: "August 10, 2026",
+    category: "Always a Beginner",
+    readTime: "2 min read",
+    image: "/images/pole-vault-students.jpg",
+    imageAlt:
+      "Kippy Hoene smiling with four younger pole-vaulting students, each holding a vaulting pole.",
+    imageCaption: "My fellow pole vaulters and me—different ages, but all learning together.",
+    content: [
+      {
+        type: "paragraph",
+        text: "When I first tried fencing alongside grade-school students, I felt painfully self-conscious. I worried about how ridiculous I must look—a middle-aged woman learning a new sport beside kids.",
+      },
+      {
+        type: "paragraph",
+        text: "By the time I took up pole vaulting at fifty-five, something had changed.",
+      },
+      {
+        type: "paragraph",
+        text: "My fellow students were much younger, and most of them barely reached my shoulder. But this time, I wasn’t embarrassed. I was proud to be there, using my body, learning something difficult, and sharing the experience with athletes from a completely different generation.",
+      },
+      {
+        type: "paragraph",
+        text: "We were all beginners. We all missed jumps, misunderstood instructions, and celebrated when one small piece finally clicked. The age difference no longer separated me from the group—it became part of what made the experience special.",
+      },
+      {
+        type: "image",
+        text: "Kippy holding her pole and wearing a medal after a pole-vaulting competition.",
+        image: "/images/pole-vault-medal.jpg",
+        imageAlt: "Kippy Hoene smiling with a pole-vaulting pole and a medal around her neck.",
+        imageCaption: "Still learning, still showing up—and no longer trying to hide.",
+      },
+      {
+        type: "paragraph",
+        text: "I took photographs with my fellow vaulters and posted them proudly. That may sound like a small thing, but it marked a real change in me. I had stopped worrying about whether I looked as though I belonged and started appreciating the fact that I had shown up.",
+      },
+      {
+        type: "paragraph",
+        text: "That photograph reminds me that belonging doesn’t require everyone to look alike or arrive at the same stage of life. Sometimes you belong simply because you are willing to learn, encourage others, and celebrate alongside them.",
+      },
+      {
+        type: "paragraph",
+        text: "*The complete pole-vaulting story appears in* The Whistler’s Daughter.",
+      },
+    ],
+  },
+  {
     slug: "the-climb-that-didnt-make-the-book-mt-whitneys-east-face",
     title: "The Climb That Didn’t Make the Book: Mt. Whitney’s East Face",
     excerpt:
