@@ -13,6 +13,10 @@ export const metadata: Metadata = {
 }
 
 export default function BlogPage() {
+  const displayedPosts = [...blogPosts].sort(
+    (a, b) => Number(Boolean(b.pinned)) - Number(Boolean(a.pinned)),
+  )
+
   return (
     <>
       <SiteHeader />
@@ -34,7 +38,7 @@ export default function BlogPage() {
 
         <section className="mx-auto max-w-4xl px-4 py-16 md:px-6 md:py-24">
           <div className="space-y-6">
-            {blogPosts.map((post) => (
+            {displayedPosts.map((post) => (
               <article
                 key={post.slug}
                 className="group overflow-hidden rounded-2xl border border-border bg-card transition-shadow hover:shadow-lg"
