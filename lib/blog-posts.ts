@@ -4,6 +4,7 @@ export type BlogContentBlock = {
   image?: string
   imageAlt?: string
   imageCaption?: string
+  pinned?: boolean
 }
 
 export type BlogPost = {
@@ -188,6 +189,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "the-year-the-mountain-said-no",
     title: "The Year the Mountain Said No: What the Appalachian Trail Taught the Adventure Girls",
+    pinned: true,
     excerpt:
       "Eight friends, a fourteen-year plan, and the New Hampshire storm that taught me the difference between hearing a warning and receiving it.",
     date: "August 6, 2026",
