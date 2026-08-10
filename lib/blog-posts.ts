@@ -80,10 +80,10 @@ export const blogPosts: BlogPost[] = [
     date: "August 9, 2026",
     category: "Beyond the Book",
     readTime: "4 min read",
-    image: "/images/mt-whitney-east-face.jpeg",
+    image: "/images/mt-whitney-approach.jpg",
     imageAlt:
-      "Kippy Hoene climbing the exposed granite of Mt. Whitney’s East Face while secured by a rope.",
-    imageCaption: "Climbing straight up the side of Mt. Whitney.",
+      "Kippy Hoene carrying a large red expedition backpack during the Mt. Whitney approach.",
+    imageCaption: "The fifty-two-pound pack: same weight for everyone.",
     content: [
       {
         type: "paragraph",
@@ -91,10 +91,10 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "image",
-        text: "Kippy carrying a large expedition pack during the approach to Mt. Whitney.",
-        image: "/images/mt-whitney-approach.jpg",
-        imageAlt: "Kippy Hoene carrying a large red expedition backpack during the Mt. Whitney approach.",
-        imageCaption: "The fifty-two-pound pack: same weight for everyone.",
+        text: "Kippy climbing the exposed granite of Mt. Whitney’s East Face.",
+        image: "/images/mt-whitney-east-face.jpeg",
+        imageAlt: "Kippy Hoene climbing the exposed granite of Mt. Whitney’s East Face while secured by a rope.",
+        imageCaption: "Climbing straight up the side of Mt. Whitney.",
       },
       {
         type: "paragraph",
