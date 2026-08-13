@@ -23,6 +23,74 @@ export type BlogPost = {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "are-you-tied-in",
+    title: "Are You Tied In?",
+    excerpt:
+      "A thousand feet above the ground, I discovered that skill means very little when attention quietly slips away.",
+    date: "August 13, 2026",
+    category: "Lessons from the Wall",
+    readTime: "3 min read",
+    image: "/images/dark-shadows.jpg",
+    imageAlt:
+      "Kippy Hoene standing on a tiny ledge high on the Dark Shadows climbing route, surrounded by sheer rock and a vast drop below.",
+    imageCaption:
+      "Look closely and you can see the tiny ledge—and me, standing where I realized I was not tied in.",
+    content: [
+      {
+        type: "paragraph",
+        text: "Look closely at the photograph and you can see the tiny ledge—and me, standing where I realized I was not tied in.",
+      },
+      {
+        type: "paragraph",
+        text: "I was a thousand feet up a route called Dark Shadows when John’s voice cut through the wind.",
+      },
+      {
+        type: "quote",
+        text: "Kippy, you’re not tied into anything.",
+      },
+      {
+        type: "paragraph",
+        text: "For one strange moment, I felt completely calm. My hands were on the rock. My feet were secure. Nothing had changed—except that somewhere along the way, operating on autopilot, I had unclipped from the one thing keeping me alive.",
+      },
+      {
+        type: "paragraph",
+        text: "I hadn’t slipped or lost my ability to climb. I had simply stopped paying attention, and my body had continued moving as if the safety line were still there.",
+      },
+      {
+        type: "paragraph",
+        text: "For years, I thought the lesson was obvious: check your gear, respect the height, and never become complacent. But eventually, I realized it wasn’t only about climbing.",
+      },
+      {
+        type: "heading",
+        text: "It was about attention.",
+      },
+      {
+        type: "paragraph",
+        text: "How often are we physically present while our minds are somewhere else? We nod through warnings we aren’t really hearing. We trust what we assume is secure without checking the line. Most of our mistakes don’t begin with a dramatic fall. They begin with a quiet, ordinary unclipping we fail to notice.",
+      },
+      {
+        type: "paragraph",
+        text: "That day taught me to ask myself a simple question:",
+      },
+      {
+        type: "quote",
+        text: "Am I tied in right now?",
+      },
+      {
+        type: "paragraph",
+        text: "Am I fully here—present, attentive, and connected to what I’m doing and to the people around me?",
+      },
+      {
+        type: "paragraph",
+        text: "Showing up isn’t enough. We have to show up fully, tied into the moment and ready for whatever move comes next.",
+      },
+      {
+        type: "paragraph",
+        text: "*This story is one small piece of* The Whistler’s Daughter, *available October 1. It’s a memoir about learning a new sport nearly every year—and what all that climbing, falling, and getting back up taught me about what truly matters.*",
+      },
+    ],
+  },
+  {
     slug: "when-i-stopped-being-embarrassed",
     title: "When I Stopped Being Embarrassed",
     excerpt:
