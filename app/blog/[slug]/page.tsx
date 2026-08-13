@@ -5,6 +5,7 @@ import { ArrowLeft } from "lucide-react"
 import { notFound } from "next/navigation"
 import { SiteFooter } from "@/components/site-footer"
 import { SiteHeader } from "@/components/site-header"
+import { BlogComments } from "@/components/blog-comments"
 import { blogPosts, getBlogPost } from "@/lib/blog-posts"
 
 type PostPageProps = {
@@ -141,6 +142,7 @@ export default async function PostPage({ params }: PostPageProps) {
                 )
               })}
             </div>
+            <BlogComments slug={post.slug} />
           </div>
         </article>
       </main>
