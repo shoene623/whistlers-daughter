@@ -73,12 +73,16 @@ export default async function PostPage({ params }: PostPageProps) {
           <div className="mx-auto max-w-3xl px-4 py-14 md:px-6 md:py-20">
             {post.image && (
               <figure className="mb-12">
-                <div className="overflow-hidden rounded-2xl border border-border bg-secondary shadow-sm">
+                <div
+                  className={`overflow-hidden rounded-2xl border border-border bg-secondary shadow-sm ${
+                    post.imagePortrait ? "mx-auto max-w-md" : ""
+                  }`}
+                >
                   <Image
                     src={post.image}
                     alt={post.imageAlt ?? ""}
-                    width={800}
-                    height={533}
+                    width={post.imagePortrait ? 694 : 800}
+                    height={post.imagePortrait ? 878 : 533}
                     className="h-auto w-full object-cover"
                     priority
                   />

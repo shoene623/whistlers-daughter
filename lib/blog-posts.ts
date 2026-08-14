@@ -4,6 +4,7 @@ export type BlogContentBlock = {
   image?: string
   imageAlt?: string
   imageCaption?: string
+  imagePortrait?: boolean
   pinned?: boolean
 }
 
@@ -228,6 +229,7 @@ export const blogPosts: BlogPost[] = [
     category: "Beyond the Book",
     readTime: "4 min read",
     image: "/images/mt-whitney-approach.jpg",
+    imagePortrait: true,
     imageAlt:
       "Kippy Hoene carrying a large red expedition backpack during the Mt. Whitney approach.",
     imageCaption: "The fifty-two-pound pack: same weight for everyone.",
