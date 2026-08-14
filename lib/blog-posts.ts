@@ -37,7 +37,7 @@ export const blogPosts: BlogPost[] = [
     content: [
       {
         type: "paragraph",
-        text: "The Adventure Girls and I had a bar table, a poster board, and plenty of free advice, so we set up shop on a corner of the Strip where people spilled out of the bars.",
+        text: "The Adventure Girls and I had a bar table, a poster board, and plenty of free advice, so we set up shop on a corner of the main drag where people spilled out of the bars.",
       },
       {
         type: "paragraph",
@@ -49,11 +49,11 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "paragraph",
-        text: "People walked past laughing and pointed us out to their friends. A few circled back just to mess with us, treating the whole thing as a joke, a dare, or something funny to talk about the next morning.",
+        text: "People walked past laughing and pointed us out to their friends. A few circled back just to mess with us—a joke, a dare, something funny to tell people the next morning.",
       },
       {
         type: "paragraph",
-        text: "But then someone would sit in the folding chair across from us, still smiling out of habit, and suddenly stop performing. The bravado would disappear, and out would come the real thing—the thing they hadn’t said aloud yet, perhaps not even to themselves.",
+        text: "But then someone would sit down in the folding chair across from us, still smiling out of habit, and suddenly stop performing. The bravado would disappear, and out would come the real thing—the thing they hadn’t said aloud yet, maybe not even to themselves.",
       },
       {
         type: "image",
@@ -69,23 +69,23 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "paragraph",
-        text: "One night, a woman sat beside Julie and began talking. Their conversation grew increasingly serious. On the way home, Julie told us she was picking the woman up the following morning and taking her to the police station.",
+        text: "One night, a woman sat beside Julie and started talking. The conversation turned serious. On the way home, Julie told us she was picking the woman up in the morning and driving her to the police station.",
       },
       {
         type: "paragraph",
-        text: "And she did.",
+        text: "She did.",
       },
       {
         type: "paragraph",
-        text: "Julie sat beside her as the woman filed for a restraining order—something she hadn’t felt able to do alone and might never have done if a homemade poster and a folding chair hadn’t given her a safe place to say the truth aloud to someone willing to listen.",
+        text: "Julie sat beside her while she filed a restraining order—something she hadn’t felt able to do alone, and might never have done, if a homemade poster and a folding chair hadn’t given her somewhere to say the truth out loud to someone willing to listen.",
       },
       {
         type: "paragraph",
-        text: "We were simply a group of women who kept showing up on the same corner, ready to listen to whoever sat down. Most of what we heard stayed exactly where it belonged—funny, forgettable, or theirs alone.",
+        text: "We were just a group of women who kept showing up on the same corner, ready to listen to whoever sat down. Most of what we heard stayed exactly where it belonged—funny, forgettable, or theirs alone.",
       },
       {
         type: "paragraph",
-        text: "But every once in a while, our little advice stand did something we had never advertised it could do.",
+        text: "But every once in a while, the advice stand did something we never advertised it could do.",
       },
       {
         type: "quote",
@@ -93,11 +93,11 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "paragraph",
-        text: "You don’t always get to choose the moment when your presence will matter. Sometimes you simply have to show up—and be willing to listen when it does.",
+        text: "You don’t always get to choose the moment your presence will matter. Sometimes you just have to show up—and be willing to listen when it does.",
       },
       {
         type: "paragraph",
-        text: "*This story is one of many from the years the Adventure Girls spent finding one another, one strange and wonderful stunt at a time—a thread that runs through* The Whistler’s Daughter, *available October 1.*",
+        text: "This is one of many stories from the years the Adventure Girls spent finding each other, one strange and wonderful stunt at a time—a thread that runs through *The Whistler’s Daughter*, available October 1.",
       },
     ],
   },
