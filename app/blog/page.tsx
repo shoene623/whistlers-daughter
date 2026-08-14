@@ -47,14 +47,20 @@ export default function BlogPage() {
                   <Link
                     href={`/blog/${post.slug}`}
                     aria-label={`Read ${post.title}`}
-                    className="block overflow-hidden border-b border-border bg-secondary"
+                    className={`block overflow-hidden border-b border-border bg-secondary ${
+                      post.imagePortrait ? "p-6 md:p-8" : ""
+                    }`}
                   >
                     <Image
                       src={post.image}
                       alt={post.imageAlt ?? ""}
-                      width={1200}
-                      height={675}
-                      className="aspect-[16/9] w-full object-cover transition-transform duration-500 group-hover:scale-[1.02]"
+                      width={post.imagePortrait ? 694 : 1200}
+                      height={post.imagePortrait ? 878 : 675}
+                      className={
+                        post.imagePortrait
+                          ? "mx-auto h-auto max-h-[520px] w-auto object-contain transition-transform duration-500 group-hover:scale-[1.02]"
+                          : "aspect-[16/9] w-full object-cover transition-transform duration-500 group-hover:scale-[1.02]"
+                      }
                     />
                   </Link>
                 )}

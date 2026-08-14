@@ -283,6 +283,7 @@ export const blogPosts: BlogPost[] = [
     category: "Behind the Book",
     readTime: "4 min read",
     image: "/images/chalkboard-audrey-hepburn.jpeg",
+    imagePortrait: true,
     imageAlt:
       "A colorful chalkboard featuring the Audrey Hepburn quote: Nothing is impossible, the word itself says I’m possible.",
     imageCaption: "One of the weekly quotes that greeted people on their walk to the beach.",
