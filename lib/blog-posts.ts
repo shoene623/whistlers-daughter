@@ -24,6 +24,74 @@ export type BlogPost = {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "the-best-thing-i-did-on-my-first-hut-trip-was-miss-the-bridge",
+    title: "The Best Thing I Did on My First Hut Trip Was Miss the Bridge",
+    excerpt:
+      "I was nervous about my first hut-to-hut trip—until one wrong turn sent me skiing straight into a creek.",
+    date: "August 15, 2026",
+    category: "Beyond the Book",
+    readTime: "2 min read",
+    image: "/images/hut-trip-missed-bridge.jpg",
+    imageAlt:
+      "Kippy Hoene climbing out of a snowy creek beside a solid snow bridge while another skier watches.",
+    imageCaption:
+      "The bridge was perfectly solid. I simply missed it and skied into the creek instead.",
+    content: [
+      {
+        type: "paragraph",
+        text: "In *The Whistler’s Daughter*, I share some of my experiences on hut-to-hut trips. They are over-the-top adventures—remote mountain trails, spectacular scenery, and the wonderful feeling of reaching a warm hut after a long day outside. Everyone should experience one at least once.",
+      },
+      {
+        type: "paragraph",
+        text: "What I don’t mention in the book is how nervous I was before my first trip.",
+      },
+      {
+        type: "paragraph",
+        text: "I worried about keeping up. I worried about whether I was prepared. Mostly, I worried that everyone else would look capable while I would quickly reveal that I had no idea what I was doing.",
+      },
+      {
+        type: "paragraph",
+        text: "Fortunately, I got that part over with during the first hour.",
+      },
+      {
+        type: "paragraph",
+        text: "We came to a perfectly solid snow bridge crossing a creek. The bridge wasn’t the problem. I was. I missed my turn, veered off the trail, and skied straight into the water.",
+      },
+      {
+        type: "paragraph",
+        text: "That is the snow bridge in the photograph—the perfectly safe bridge I somehow failed to use.",
+      },
+      {
+        type: "paragraph",
+        text: "Strangely, I was relieved.",
+      },
+      {
+        type: "paragraph",
+        text: "Once you miss an entire bridge and land in a creek in front of everyone, there are no high expectations left to meet. I didn’t have to pretend to be the strongest, fastest, or most experienced person in the group. I could simply climb out, dry off, and keep moving.",
+      },
+      {
+        type: "paragraph",
+        text: "And I did.",
+      },
+      {
+        type: "paragraph",
+        text: "That embarrassing beginning became one of the reasons I loved the experience so much. It reminded me that adventure doesn’t require looking graceful or knowing exactly what you’re doing. Sometimes it begins with wet clothes, bruised pride, and a group of people trying not to laugh while they help you out of a creek.",
+      },
+      {
+        type: "paragraph",
+        text: "The huts were extraordinary. The journey between them was even better. But the real gift was discovering that I didn’t have to prove I belonged there.",
+      },
+      {
+        type: "quote",
+        text: "I just had to keep going.",
+      },
+      {
+        type: "paragraph",
+        text: "*This is one of many adventures that runs through* The Whistler’s Daughter, *available October 1.*",
+      },
+    ],
+  },
+  {
     slug: "the-night-free-advice-mattered",
     title: "The Night Free Advice Mattered",
     excerpt:
