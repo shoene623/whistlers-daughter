@@ -107,6 +107,25 @@ export default async function PostPage({ params }: PostPageProps) {
                   )
                 }
 
+                if (block.type === "rating") {
+                  const [sport, details = ""] = block.text.split("\n")
+                  return (
+                    <section key={index} className="rounded-2xl border border-border bg-secondary/35 px-5 py-5 shadow-sm md:px-6">
+                      <h3 className="font-serif text-2xl font-bold text-foreground">{sport}</h3>
+                      <div className="mt-4 flex flex-wrap gap-2">
+                        {details.split(" | ").map((detail) => (
+                          <span
+                            key={detail}
+                            className="rounded-full border border-border bg-background px-3 py-1.5 text-sm leading-6 text-foreground/85"
+                          >
+                            {detail}
+                          </span>
+                        ))}
+                      </div>
+                    </section>
+                  )
+                }
+
                 if (block.type === "image" && block.image) {
                   return (
                     <figure key={index} className="py-6">
