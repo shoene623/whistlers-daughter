@@ -1,5 +1,5 @@
 export type BlogContentBlock = {
-  type: "paragraph" | "heading" | "quote" | "image"
+  type: "paragraph" | "heading" | "quote" | "image" | "rating"
   text: string
   image?: string
   imageAlt?: string
@@ -23,6 +23,252 @@ export type BlogPost = {
 }
 
 export const blogPosts: BlogPost[] = [
+  {
+    slug: "my-completely-unscientific-sports-ratings",
+    title: "My Completely Unscientific Sports Ratings",
+    excerpt: "The fun, fear, cost, difficulty and cool factor of every sport I tried—rated with absolutely no scientific method.",
+    date: "August 18, 2026",
+    category: "Beyond the Book",
+    readTime: "9 min read",
+    content: [
+      {
+        type: "paragraph",
+        text: "Another thing that didn’t make it into *The Whistler’s Daughter* was my personal rating of every sport I tried."
+      },
+      {
+        type: "paragraph",
+        text: "Which were the most fun? Which were terrifying? Which required lessons, money, muscles—or all three? And, perhaps most importantly, which made me look the coolest?"
+      },
+      {
+        type: "paragraph",
+        text: "These ratings are entirely subjective and scientifically questionable. They reflect my experience, my abilities, and possibly how badly I was bruised afterward."
+      },
+      {
+        type: "heading",
+        text: "The rating system"
+      },
+      {
+        type: "paragraph",
+        text: "😄 Fun Factor | 👍 Lessons recommended | ⭐ Lessons helpful, but not required | 👎 Lessons unnecessary | 💪 Difficulty—from learning the basics to mastering the sport | 💲 Cost | 😬 Fear Factor | 😎 Cool Factor"
+      },
+      {
+        type: "heading",
+        text: "The ratings"
+      },
+      {
+        type: "rating",
+        text: "1997 – Tennis\nFun: 😄😄😄😄 | Lessons: ⭐ Helpful, but not required | Difficulty: 💪 → 💪💪💪💪 | Cost: 💲💲💲 | Fear: 😬 | Cool: 😎😎😎"
+      },
+      {
+        type: "rating",
+        text: "1998 – Fencing\nFun: 😄 | Lessons: 👍 | Difficulty: 💪💪 → 💪💪💪💪 | Cost: 💲💲💲 | Fear: 😬 | Cool: 😎😎😎😎"
+      },
+      {
+        type: "rating",
+        text: "1998 – Rollerblading\nFun: 😄😄😄 | Lessons: 👎 | Difficulty: 💪 → 💪💪 | Cost: 💲 | Fear: 😬😬 | Cool: 😎😎"
+      },
+      {
+        type: "rating",
+        text: "1999 – Outdoor Rock Climbing\nFun: 😄😄😄😄😄 | Lessons: 👍 | Difficulty: 💪💪 → 💪💪💪💪💪 | Cost: 💲💲💲 | Fear: 😬😬😬😬 | Cool: 😎😎😎😎😎"
+      },
+      {
+        type: "rating",
+        text: "2000 – Wakeboarding\nFun: 😄😄😄😄 | Lessons: 👍 | Difficulty: 💪💪 → 💪💪💪💪 | Cost: 💲💲💲💲💲 | Fear: 😬 | Cool: 😎😎😎😎"
+      },
+      {
+        type: "rating",
+        text: "2000 – Racewalking\nFun: 😄 | Lessons: ⭐ Helpful, but not required | Difficulty: 💪 → 💪💪💪 | Cost: 💲 | Fear: 😬 | Cool: 😎"
+      },
+      {
+        type: "rating",
+        text: "2001 – Cross-Country Skiing\nFun: 😄😄😄😄 | Lessons: 👎 | Difficulty: 💪 → 💪💪💪 | Cost: 💲💲 | Fear: 😬 | Cool: 😎😎"
+      },
+      {
+        type: "rating",
+        text: "2001 – Snowshoeing\nFun: 😄😄 | Lessons: 👎 | Difficulty: 💪 → 💪 | Cost: 💲 | Fear: 😬 | Cool: 😎"
+      },
+      {
+        type: "rating",
+        text: "2002 – Squash\nFun: 😄😄😄 | Lessons: 👍 | Difficulty: 💪💪 → 💪💪💪💪 | Cost: 💲💲💲 | Fear: 😬 | Cool: 😎😎😎"
+      },
+      {
+        type: "rating",
+        text: "2003 – Geocaching\nFun: 😄😄 | Lessons: 👎 | Difficulty: 💪 → 💪💪 | Cost: 💲 | Fear: 😬 | Cool: 😎😎"
+      },
+      {
+        type: "rating",
+        text: "2003 – Orienteering\nFun: 😄😄 | Lessons: 👎 | Difficulty: 💪 → 💪💪💪 | Cost: 💲 | Fear: 😬 | Cool: 😎😎"
+      },
+      {
+        type: "rating",
+        text: "2004 – Spelunking\nFun: 😄😄😄 | Lessons: 👍 | Difficulty: 💪 → 💪💪💪 | Cost: 💲💲 | Fear: 😬😬😬 | Cool: 😎😎😎😎"
+      },
+      {
+        type: "rating",
+        text: "2004 – Telemark Skiing\nFun: 😄😄 | Lessons: 👍 | Difficulty: 💪💪 → 💪💪💪💪 | Cost: 💲💲💲💲 | Fear: 😬😬😬 | Cool: 😎😎😎😎"
+      },
+      {
+        type: "rating",
+        text: "2005 – Snowboarding\nFun: 😄 | Lessons: 👍 | Difficulty: 💪💪 → 💪💪💪💪💪 | Cost: 💲💲💲💲 | Fear: 😬😬😬 | Cool: 😎😎😎😎"
+      },
+      {
+        type: "rating",
+        text: "2005 – Olympic Weightlifting\nFun: 😄 | Lessons: 👍 | Difficulty: 💪 → 💪💪💪💪💪 | Cost: 💲💲 | Fear: 😬 | Cool: 😎😎"
+      },
+      {
+        type: "rating",
+        text: "2006 – Mountain Biking\nFun: 😄😄😄😄😄 | Lessons: 👎 | Difficulty: 💪💪 → 💪💪💪💪💪 | Cost: 💲💲💲 | Fear: 😬😬😬😬 | Cool: 😎😎😎😎😎"
+      },
+      {
+        type: "rating",
+        text: "2007 – Surfing\nFun: 😄😄😄😄😄 | Lessons: 👍 | Difficulty: 💪💪💪 → 💪💪💪💪💪 | Cost: 💲💲💲 | Fear: 😬😬😬 | Cool: 😎😎😎😎😎"
+      },
+      {
+        type: "rating",
+        text: "2008 – Yoga\nFun: 😄😄 | Lessons: 👎 | Difficulty: 💪 → 💪💪💪 | Cost: 💲 | Fear: 😬 | Cool: 😎"
+      },
+      {
+        type: "rating",
+        text: "2008 – Slacklining\nFun: 😄😄 | Lessons: 👎 | Difficulty: 💪💪 → 💪💪💪💪 | Cost: 💲 | Fear: 😬 | Cool: 😎😎😎"
+      },
+      {
+        type: "rating",
+        text: "2009 – Paddleboarding\nFun: 😄😄😄 | Lessons: 👎 | Difficulty: 💪 → 💪💪 | Cost: 💲💲 | Fear: 😬 | Cool: 😎😎"
+      },
+      {
+        type: "rating",
+        text: "2010 – Aerial Silks\nFun: 😄😄😄😄😄 | Lessons: 👍 | Difficulty: 💪💪 → 💪💪💪💪💪 | Cost: 💲💲💲💲 | Fear: 😬😬😬 | Cool: 😎😎😎😎😎"
+      },
+      {
+        type: "rating",
+        text: "2011 – Ice Climbing\nFun: 😄😄😄😄 | Lessons: 👍 | Difficulty: 💪💪 → 💪💪💪💪💪 | Cost: 💲💲💲 | Fear: 😬😬😬😬 | Cool: 😎😎😎😎😎"
+      },
+      {
+        type: "rating",
+        text: "2012 – Trapeze\nFun: 😄😄😄😄😄 | Lessons: 👍 | Difficulty: 💪💪 → 💪💪💪💪💪 | Cost: 💲💲💲 | Fear: 😬😬😬 | Cool: 😎😎😎😎😎"
+      },
+      {
+        type: "rating",
+        text: "2013 – Kitesurfing\nFun: 😄😄😄😄😄 | Lessons: 👍 | Difficulty: 💪💪💪 → 💪💪💪💪💪 | Cost: 💲💲💲💲💲 | Fear: 😬😬😬😬 | Cool: 😎😎😎😎😎"
+      },
+      {
+        type: "rating",
+        text: "2013 – Tumbling\nFun: 😄😄😄😄 | Lessons: 👍 | Difficulty: 💪 → 💪💪💪💪 | Cost: 💲 | Fear: 😬 | Cool: 😎😎😎"
+      },
+      {
+        type: "rating",
+        text: "2014 – Stilt Walking\nFun: 😄😄 | Lessons: ⭐ Helpful, but not required | Difficulty: 💪 → 💪💪 | Cost: 💲 | Fear: 😬😬 | Cool: 😎😎😎"
+      },
+      {
+        type: "rating",
+        text: "2014 – AcroYoga\nFun: 😄😄😄😄 | Lessons: ⭐ Helpful, but not required | Difficulty: 💪 → 💪💪💪💪 | Cost: 💲 | Fear: 😬 | Cool: 😎😎😎😎"
+      },
+      {
+        type: "rating",
+        text: "2015 – Pole Vaulting\nFun: 😄😄😄 | Lessons: 👍 | Difficulty: 💪💪💪 → 💪💪💪💪💪 | Cost: 💲💲💲💲 | Fear: 😬😬😬😬 | Cool: 😎😎😎😎"
+      },
+      {
+        type: "rating",
+        text: "2016 – Pickleball\nFun: 😄😄😄😄 | Lessons: ⭐ Helpful, but not required | Difficulty: 💪 → 💪💪💪 | Cost: 💲 | Fear: 😬 | Cool: 😎😎"
+      },
+      {
+        type: "rating",
+        text: "2016 – Snow Kiting\nFun: 😄😄 | Lessons: 👍 | Difficulty: 💪💪💪 → 💪💪💪💪💪 | Cost: 💲💲💲 | Fear: 😬😬 | Cool: 😎😎😎😎😎"
+      },
+      {
+        type: "rating",
+        text: "2017 – Tightrope Walking\nFun: 😄😄😄 | Lessons: 👎 | Difficulty: 💪💪 → 💪💪💪💪💪 | Cost: 💲💲 | Fear: 😬😬 | Cool: 😎😎😎"
+      },
+      {
+        type: "rating",
+        text: "2017 – Bungee Dance\nFun: 😄😄😄 | Lessons: 👍 | Difficulty: 💪 → 💪💪💪💪 | Cost: 💲💲 | Fear: 😬 | Cool: 😎😎😎😎"
+      },
+      {
+        type: "rating",
+        text: "2018 – Windsurfing\nFun: 😄😄😄😄😄 | Lessons: 👍 | Difficulty: 💪💪💪 → 💪💪💪💪 | Cost: 💲💲💲💲 | Fear: 😬😬 | Cool: 😎😎😎😎😎"
+      },
+      {
+        type: "rating",
+        text: "2019 – Tap Dancing\nFun: 😄😄😄😄 | Lessons: 👍 | Difficulty: 💪💪 → 💪💪💪💪 | Cost: 💲💲 | Fear: 😬 | Cool: 😎😎😎"
+      },
+      {
+        type: "rating",
+        text: "2019 – Scuba Diving\nFun: 😄😄😄😄 | Lessons: 👍 | Difficulty: 💪💪 → 💪💪💪 | Cost: 💲💲💲💲 | Fear: 😬😬😬 | Cool: 😎😎😎😎😎"
+      },
+      {
+        type: "rating",
+        text: "2020 – Wing Surfing\nFun: 😄😄😄😄 | Lessons: 👍 | Difficulty: 💪💪💪 → 💪💪💪💪 | Cost: 💲💲💲💲 | Fear: 😬😬 | Cool: 😎😎😎😎"
+      },
+      {
+        type: "rating",
+        text: "2021 – Roller Pole\nFun: 😄😄😄😄😄 | Lessons: 👍 | Difficulty: 💪 → 💪💪💪💪 | Cost: 💲💲 | Fear: 😬😬 | Cool: 😎😎😎😎😎"
+      },
+      {
+        type: "rating",
+        text: "2021 – Paragliding\nFun: 😄😄😄 | Lessons: 👍 | Difficulty: 💪💪💪💪 → 💪💪💪💪💪 | Cost: 💲💲💲💲 | Fear: 😬😬😬😬😬 | Cool: 😎😎😎😎😎"
+      },
+      {
+        type: "rating",
+        text: "2022 – German Wheel\nFun: 😄😄😄 | Lessons: 👍 | Difficulty: 💪 → 💪💪💪💪💪 | Cost: 💲💲 | Fear: 😬😬😬 | Cool: 😎😎😎😎"
+      },
+      {
+        type: "rating",
+        text: "2023 – Parallel Bars\nFun: 😄😄😄 | Lessons: ⭐ Helpful, but not required | Difficulty: 💪💪 → 💪💪💪💪💪 | Cost: 💲 | Fear: 😬 | Cool: 😎😎😎"
+      },
+      {
+        type: "rating",
+        text: "Belly Dancing\nFun: 😄😄😄 | Lessons: 👍 | Difficulty: 💪 → 💪💪💪💪 | Cost: 💲 | Fear: 😬 | Cool: 😎😎😎"
+      },
+      {
+        type: "rating",
+        text: "Roller Skiing\nFun: 😄 | Lessons: 👎 | Difficulty: 💪 → 💪💪💪 | Cost: 💲 | Fear: 😬 | Cool: 😎"
+      },
+      {
+        type: "rating",
+        text: "Lollipop Lyra\nFun: 😄😄😄😄😄 | Lessons: 👍 | Difficulty: 💪💪 → 💪💪💪💪💪 | Cost: 💲💲 | Fear: 😬😬 | Cool: 😎😎😎😎"
+      },
+      {
+        type: "heading",
+        text: "The completely unscientific winners"
+      },
+      {
+        type: "paragraph",
+        text: "*Most fun:* Outdoor rock climbing, mountain biking, surfing, aerial silks, trapeze, kitesurfing, windsurfing, roller pole and Lollipop Lyra."
+      },
+      {
+        type: "paragraph",
+        text: "*Coolest:* Outdoor rock climbing, mountain biking, surfing, aerial silks, ice climbing, trapeze, kitesurfing, snow kiting, windsurfing, scuba diving, roller pole and paragliding."
+      },
+      {
+        type: "paragraph",
+        text: "*Most terrifying:* Paragliding—without question."
+      },
+      {
+        type: "paragraph",
+        text: "*Most expensive:* Wakeboarding and kitesurfing."
+      },
+      {
+        type: "paragraph",
+        text: "*Best combination of inexpensive, easy and fun:* Pickleball."
+      },
+      {
+        type: "paragraph",
+        text: "*Least likely to become my lifelong passion:* Racewalking, snowboarding, Olympic weightlifting and roller skiing. Sorry—not every sport can be the one."
+      },
+      {
+        type: "paragraph",
+        text: "Looking back, the ratings tell a story of their own. The sports I loved most were rarely the easiest or safest. They were the ones that challenged me, frightened me a little and gave me the satisfaction of doing something I wasn’t sure I could do."
+      },
+      {
+        type: "paragraph",
+        text: "That is really what *The Whistler’s Daughter* is about: not becoming the best at every sport, but refusing to let a prognosis decide which ones I was allowed to try."
+      },
+      {
+        type: "quote",
+        text: "Which sport would you try—and which one would you refuse to attempt even if I paid you?"
+      }
+    ]
+  },
   {
     slug: "the-best-thing-i-did-on-my-first-hut-trip-was-miss-the-bridge",
     title: "The Best Thing I Did on My First Hut Trip Was Miss the Bridge",
