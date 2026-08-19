@@ -24,6 +24,159 @@ export type BlogPost = {
 
 export const blogPosts: BlogPost[] = [
   {
+    "slug": "hey-oz-do-you-read-books",
+    "title": "Hey Oz, Do You Read Books?",
+    "excerpt": "How a stalled manuscript, a stubborn gut feeling, and one wonderfully awkward text helped me discover what The Whistler’s Daughter was really about.",
+    "date": "August 19, 2026",
+    "category": "Behind the Book",
+    "readTime": "5 min read",
+    "image": "/images/oz.jpg",
+    "imageAlt": "Oz smiling on the beach beside his dog.",
+    "imageCaption": "Oz—the almost complete stranger who helped me find the lessons hidden inside the stories.",
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "People often ask how—or why—I started writing *The Whistler’s Daughter*."
+      },
+      {
+        "type": "paragraph",
+        "text": "It began with a simple desire to share my “sport-a-year” quest. Learning a new sport every year had changed my life in ways I never expected, and I hoped my experiences might inspire other people to try something new, challenge their own assumptions, or simply stop waiting until they felt completely ready."
+      },
+      {
+        "type": "paragraph",
+        "text": "With that goal in mind, I set aside one hour every day to write."
+      },
+      {
+        "type": "paragraph",
+        "text": "I assumed a book had to begin at the beginning, so I sat down with paper and pen and began working on the first two sentences."
+      },
+      {
+        "type": "paragraph",
+        "text": "And then I wrote them again."
+      },
+      {
+        "type": "paragraph",
+        "text": "And again."
+      },
+      {
+        "type": "paragraph",
+        "text": "For two months, I rearranged and rephrased those same sentences, trying to make them interesting, inviting, and worthy of beginning an entire book. After all that work, I had written less than one paragraph."
+      },
+      {
+        "type": "paragraph",
+        "text": "So I gave up."
+      },
+      {
+        "type": "paragraph",
+        "text": "About a year later, I found myself mentally reliving my first rock-climbing adventure on Mt. Whitney. That story ultimately didn’t make it into the book—although it now has a home on my blog—but something happened as I replayed it."
+      },
+      {
+        "type": "paragraph",
+        "text": "The floodgates opened."
+      },
+      {
+        "type": "paragraph",
+        "text": "I stopped trying to write the beginning and started writing the stories that wanted to be told. I wrote about whichever year or adventure stood out in my mind, in no particular order. I trusted that I could piece everything together later."
+      },
+      {
+        "type": "paragraph",
+        "text": "For the next year, that was how I wrote the book."
+      },
+      {
+        "type": "paragraph",
+        "text": "Usually, around eleven at night, I would tell myself, “You can write for an hour and still be in bed by midnight.”"
+      },
+      {
+        "type": "paragraph",
+        "text": "Then I would look at the clock, and it would be two in the morning. I had to get up at seven for work, but writing had pulled me into a time warp. Three hours felt like twenty minutes."
+      },
+      {
+        "type": "paragraph",
+        "text": "The pages came quickly. The spelling, punctuation, and sentence structure did not."
+      },
+      {
+        "type": "paragraph",
+        "text": "I sent my drafts to my friend Ryan, who also has FSH muscular dystrophy. He became the first translator of what he affectionately called my “hieroglyphics.” Somehow, he could decipher the misspellings, unfinished thoughts, and sentences that made perfect sense only to me."
+      },
+      {
+        "type": "paragraph",
+        "text": "Eventually, I finished the manuscript."
+      },
+      {
+        "type": "paragraph",
+        "text": "And then I let it sit for almost two years."
+      },
+      {
+        "type": "paragraph",
+        "text": "I knew something was missing, but I couldn’t identify what it was."
+      },
+      {
+        "type": "paragraph",
+        "text": "Then, at a neighborhood party, I saw Oz—a neighbor I barely knew beyond waving to him while he walked his dogs. Something in my gut said, *Ask him to help you finish the book. Ask him to help you find the lessons.*"
+      },
+      {
+        "type": "paragraph",
+        "text": "I tried to ignore that voice. I didn’t even know what Oz did for a living. For all I knew, he had never written anything beyond a grocery list."
+      },
+      {
+        "type": "paragraph",
+        "text": "But my gut would not stop talking."
+      },
+      {
+        "type": "paragraph",
+        "text": "Fine."
+      },
+      {
+        "type": "paragraph",
+        "text": "I decided to text him. The only problem was figuring out how to ask an almost complete stranger whether he could help with a book."
+      },
+      {
+        "type": "paragraph",
+        "text": "Finally, I sent:"
+      },
+      {
+        "type": "quote",
+        "text": "Hey Oz, do you read books?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Fortunately, he did."
+      },
+      {
+        "type": "paragraph",
+        "text": "Oz worked his way through the manuscript, found the gold nuggets buried inside it, and polished them until they shone. He helped me uncover what the stories meant—not only what happened."
+      },
+      {
+        "type": "paragraph",
+        "text": "He also removed certain details that apparently were not essential, including the origins of every sport and a thorough account of how each had developed throughout history."
+      },
+      {
+        "type": "paragraph",
+        "text": "Personally, I found that information fascinating."
+      },
+      {
+        "type": "paragraph",
+        "text": "But Oz helped me understand that I wasn’t writing a history of sports. I was writing the story of what those sports had taught me about persistence, fear, friendship, identity, and continuing to expand my life."
+      },
+      {
+        "type": "paragraph",
+        "text": "Looking back, I had approached writing exactly as I approached every new sport. At first, I worried so much about doing it correctly that I couldn’t get started. The book only began when I stopped trying to perfect the first move and entered the story wherever I felt most alive."
+      },
+      {
+        "type": "quote",
+        "text": "Sometimes the beginning isn’t where you start."
+      },
+      {
+        "type": "paragraph",
+        "text": "And sometimes finishing a book begins with asking an almost complete stranger:"
+      },
+      {
+        "type": "quote",
+        "text": "Do you read books?"
+      }
+    ]
+  },
+  {
     slug: "my-completely-unscientific-sports-ratings",
     title: "My Completely Unscientific Sports Ratings",
     excerpt: "The fun, fear, cost, difficulty and cool factor of every sport I tried—rated with absolutely no scientific method.",
