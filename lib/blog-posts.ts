@@ -31,6 +31,7 @@ export const blogPosts: BlogPost[] = [
     "category": "Behind the Book",
     "readTime": "5 min read",
     "image": "/images/oz.jpg",
+    "imagePortrait": true,
     "imageAlt": "Oz smiling on the beach beside his dog.",
     "imageCaption": "Oz—the almost complete stranger who helped me find the lessons hidden inside the stories.",
     "content": [
