@@ -24,6 +24,83 @@ export type BlogPost = {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "the-day-i-called-911-on-my-embezzler",
+    title: "The Day I Called 911 on My Embezzler",
+    excerpt: "After nearly two years of waiting, I finally made the call that led police straight to the woman who had embezzled from my company.",
+    date: "August 24, 2026",
+    category: "Behind the Book",
+    readTime: "3 min read",
+    image: "/images/pam-arrest-police.jpeg",
+    imageAlt: "Police officers standing beside their vehicles on the day Pam was arrested.",
+    imageCaption: "The police response that day.",
+    content: [
+      {
+        type: "paragraph",
+        text: "There are certain phone calls you never expect to make in your life. Calling 911 to report the woman who embezzled from my company was one of them."
+      },
+      {
+        type: "paragraph",
+        text: "Pam had been LifeSafe’s office manager, someone I trusted with the inner workings of the company. By the time payroll irregularities led us to look more closely, the damage stretched back years. We turned everything over to the police and filed a report. Then we waited."
+      },
+      {
+        type: "paragraph",
+        text: "And waited."
+      },
+      {
+        type: "paragraph",
+        text: "The investigation dragged on for nearly two years. Eventually, an active felony warrant was issued—but Pam still had not been arrested. Then I learned that she was not hiding in another state or living under an assumed name. She was still right there in Jacksonville."
+      },
+      {
+        type: "paragraph",
+        text: "So I drove to her house."
+      },
+      {
+        type: "paragraph",
+        text: "When I pulled up, I saw cars in the driveway. She was home. I sat in my car, took out my phone and called 911."
+      },
+      {
+        type: "quote",
+        text: "I’d like to report a person with an active felony warrant."
+      },
+      {
+        type: "paragraph",
+        text: "It was a strangely calm sentence for such a surreal moment."
+      },
+      {
+        type: "paragraph",
+        text: "Within minutes, three police cars arrived. I watched as the officers approached the house and took Pam into custody on the front lawn. After all the waiting, phone calls and frustration, it happened almost unbelievably fast."
+      },
+      {
+        type: "paragraph",
+        text: "I eventually drove away, trying to absorb what I had just witnessed. On the way back, I stopped at a gas station."
+      },
+      {
+        type: "paragraph",
+        text: "And there they were."
+      },
+      {
+        type: "paragraph",
+        text: "The same police officers had stopped to get soft drinks. Their police car was parked outside—and Pam was sitting handcuffed in the back seat."
+      },
+      {
+        type: "paragraph",
+        text: "Of all the places I might have expected to see her again, the gas station was not one of them. For a moment, I simply stared. I had spent nearly two years trying to get someone to take action, and now the woman who had caused so much damage to my company was sitting a few feet away while the officers chose their drinks."
+      },
+      {
+        type: "paragraph",
+        text: "It was justice, bureaucracy and everyday life all occupying the same gas-station parking lot."
+      },
+      {
+        type: "paragraph",
+        text: "The arrest did not return everything that had been taken from us. It did not erase the years of damage or the work required to rebuild. But it did mark the moment when waiting ended and accountability finally began."
+      },
+      {
+        type: "quote",
+        text: "Sometimes closure does not arrive with dramatic music or a carefully written ending. Sometimes it is sitting handcuffed in the back of a police car while everyone else runs inside for a soft drink."
+      }
+    ]
+  },
+  {
     "slug": "hey-oz-do-you-read-books",
     "title": "Hey Oz, Do You Read Books?",
     "excerpt": "How a stalled manuscript, a stubborn gut feeling, and one wonderfully awkward text helped me discover what The Whistler’s Daughter was really about.",
@@ -297,8 +374,7 @@ export const blogPosts: BlogPost[] = [
         type: "rating",
         text: "2011 – Ice Climbing\nFun: 😄😄😄😄 | Lessons: 👍 | Difficulty: 💪💪 → 💪💪💪💪💪 | Cost: 💲💲💲 | Fear: 😬😬😬😬 | Cool: 😎😎😎😎😎"
       },
-      {
-        type: "rating",
+      {        type: "rating",
         text: "2012 – Trapeze\nFun: 😄😄😄😄😄 | Lessons: 👍 | Difficulty: 💪💪 → 💪💪💪💪💪 | Cost: 💲💲💲 | Fear: 😬😬😬 | Cool: 😎😎😎😎😎"
       },
       {
@@ -597,8 +673,7 @@ export const blogPosts: BlogPost[] = [
         text: "Kippy, you’re not tied into anything.",
       },
       {
-        type: "paragraph",
-        text: "For one strange moment, I felt completely calm. My hands were on the rock. My feet were secure. Nothing had changed—except that somewhere along the way, operating on autopilot, I had unclipped from the one thing keeping me alive.",
+        type: "paragraph",        text: "For one strange moment, I felt completely calm. My hands were on the rock. My feet were secure. Nothing had changed—except that somewhere along the way, operating on autopilot, I had unclipped from the one thing keeping me alive.",
       },
       {
         type: "paragraph",
@@ -897,8 +972,7 @@ export const blogPosts: BlogPost[] = [
       {
         type: "paragraph",
         text: "We negotiated with her anyway. We don’t mind hiking in rain, we said. She looked at a group of Midwestern women in summer gear and chose her words slowly: “If you leave now, you should be able to make it and take shelter there.”",
-      },
-      {
+      },      {
         type: "paragraph",
         text: "I heard her. I didn’t receive her. I took the one sentence that supported my plan and used it as a permission slip.",
       },
