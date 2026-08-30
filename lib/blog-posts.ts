@@ -24,6 +24,91 @@ export type BlogPost = {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "what-is-my-favorite-sport-ask-me-again-next-year",
+    title: "What Is My Favorite Sport? Ask Me Again Next Year.",
+    excerpt: "Some sports stay with me for life. Others make room for the next obsession—and for 2027, that obsession is rope flow.",
+    date: "August 30, 2026",
+    category: "Always a Beginner",
+    readTime: "3 min read",
+    image: "/images/rope-flow.png",
+    imageAlt: "An athlete practicing rope flow outdoors with a red rope.",
+    imageCaption: "My sport for 2027: rope flow.",
+    content: [
+      {
+        type: "paragraph",
+        text: "People often ask me which sport is my favorite. You would think that after learning more than forty of them, I would have an answer."
+      },
+      {
+        type: "paragraph",
+        text: "I don’t."
+      },
+      {
+        type: "paragraph",
+        text: "The truth is, my favorite sport is usually the one I am learning right now."
+      },
+      {
+        type: "paragraph",
+        text: "Some sports have been with me for years. Mountain biking, rock climbing, yoga, and all the aerial sports are my staples—the dependable ones I return to again and again."
+      },
+      {
+        type: "paragraph",
+        text: "But I cheat on them."
+      },
+      {
+        type: "paragraph",
+        text: "There is something irresistible about being a beginner. A new sport gives me a puzzle to solve, unfamiliar movements to master, and plenty of opportunities to look ridiculous. Once I choose my sport for the year, I tend to become completely obsessed with it."
+      },
+      {
+        type: "paragraph",
+        text: "Some passions feel as if they will last forever. For years, surfing was one of them. I used to be desperate for a good surfing day. I watched the weather, studied the waves, and waited impatiently for the right conditions. At the time, I could not imagine that craving ever disappearing."
+      },
+      {
+        type: "paragraph",
+        text: "But it did."
+      },
+      {
+        type: "paragraph",
+        text: "I still appreciate surfing, but I no longer feel that pull. That is the strange thing about passion: sometimes it stays with us for life, and sometimes it simply makes room for the next adventure."
+      },
+      {
+        type: "paragraph",
+        text: "I have already chosen my sport for 2027: **rope flow**."
+      },
+      {
+        type: "paragraph",
+        text: "Yes, I know what some people will say: “Is that really a sport?”"
+      },
+      {
+        type: "paragraph",
+        text: "We have been through this before."
+      },
+      {
+        type: "quote",
+        text: "My game. My rules."
+      },
+      {
+        type: "paragraph",
+        text: "Rope flow is a movement practice in which you continuously swing a weighted rope around your body in rhythmic patterns. It combines coordination, balance, mobility, timing, and creativity. Modern rope flow was formalized by David Weck in 2004, although rhythmic rope movement has much older roots in martial arts and conditioning practices."
+      },
+      {
+        type: "paragraph",
+        text: "It is part exercise, part dance, and part brain teaser—which makes it exactly the kind of challenge I love."
+      },
+      {
+        type: "paragraph",
+        text: "My favorite sport has never really been one particular activity. My favorite sport is discovering what my body and mind can learn next. It is the awkward beginning, the unexpected progress, and that wonderful moment when something that once felt impossible begins to flow."
+      },
+      {
+        type: "paragraph",
+        text: "So, for now, rope flow is my favorite."
+      },
+      {
+        type: "paragraph",
+        text: "But you may want to ask me again next year."
+      }
+    ]
+  },
+  {
     slug: "the-day-i-called-911-on-my-embezzler",
     title: "The Day I Called 911 on My Embezzler",
     excerpt: "After nearly two years of waiting, I finally made the call that led police straight to the woman who had embezzled from my company.",
