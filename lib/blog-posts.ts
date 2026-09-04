@@ -24,6 +24,32 @@ export type BlogPost = {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "and-then-even-better-doing-it-together",
+    title: "And Then Even Better: Doing It Together",
+    excerpt: "Aerial taught me strength and courage, but performing together turned fear into shared joy.",
+    date: "September 3, 2026",
+    category: "Always a Beginner",
+    readTime: "2 min read",
+    image: "/images/silk-group.jpg",
+    imageAlt: "A group of aerial performers suspended upside down on brightly colored silks during a show.",
+    imageCaption: "Trust made visible—flying together on silks.",
+    content: [
+      {
+        type: "paragraph",
+        text: "As much as I loved the personal side of aerial—the strength, the nerve, the quiet negotiation with gravity—nothing compares to being up there as part of a group."
+      },
+      {
+        type: "paragraph",
+        text: "There’s a photo I love from one of our shows: a whole row of us hanging from silks in every color, all mid-drop at once—purple, green, blue, gold, red—like a rainbow that decided to defy gravity together. Some of us are folded in half, some stretched into a full split in midair, all of us upside down at the exact same moment. From the ground, it probably looks choreographed to the second. From up in the silk, it feels more like trust made visible—dozens of hours of separate practice suddenly synced into one breath."
+      },
+      {
+        type: "paragraph",
+        text: "That’s the part solo aerial work can’t give you. When you’re flying next to people you’ve spent months doing makeup with, laughing with, spotting for—the fear turns into something closer to joy. You’re not just performing anymore; you’re performing *with* people who know exactly what that drop costs you, because it costs them the same thing. A group act turns an individual act of courage into a shared one. And somehow, being scared together is a whole lot more fun than being scared alone."
+      }
+    ]
+  },
+
+  {
     slug: "it-sounded-better-in-my-head-which-road-should-i-take",
     title: "It Sounded Better in My Head: Which Road Should I Take?",
     excerpt: "Hearing my book read aloud forced me to decide whether to rewrite it or finally let it be read.",
