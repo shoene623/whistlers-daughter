@@ -35,8 +35,8 @@ export const blogPosts: BlogPost[] = [
     category: "Behind the Book",
     readTime: "9 min read",
     image: "/images/prologue-out-in-2-weeks.png",
-    imageAlt: "The Whistler’s Daughter book cover with an Out in 2 Weeks countdown for the September 29 release.",
-    imageCaption: "The countdown is on—The Whistler’s Daughter arrives September 29.",
+    imageAlt: "Promotional image inviting readers to read the prologue of The Whistler’s Daughter before its September 29 release.",
+    imageCaption: "Read the prologue: “Whistle for Me, Kippy.”",
     imagePortrait: true,
     content: [
       { type: "quote", text: "“We know what we are, but we don’t know what we might become.” —William Shakespeare" },
