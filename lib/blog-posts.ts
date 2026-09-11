@@ -28,20 +28,6 @@ export type BlogPost = {
 
 export const blogPosts: BlogPost[] = [
   {
-    slug: "how-paddleboarding-mirrors-life",
-    title: "How Paddleboarding Mirrors Life",
-    excerpt: "Three lessons from the water: practice calm, keep taking strokes, and change the plan—not the goal.",
-    date: "September 10, 2026",
-    category: "Lessons from the Book",
-    readTime: "1 min watch",
-    image: "/images/paddleboarding-mirrors-life-poster.jpg",
-    imagePortrait: true,
-    imageAlt: "How Paddleboarding Mirrors Life—lessons from The Whistler’s Daughter.",
-    video: "/videos/how-paddleboarding-mirrors-life.mp4",
-    videoPoster: "/images/paddleboarding-mirrors-life-poster.jpg",
-    content: [],
-  },
-  {
     slug: "and-then-even-better-doing-it-together",
     title: "And Then Even Better: Doing It Together",
     excerpt: "Aerial taught me strength and courage, but performing together turned fear into shared joy.",
