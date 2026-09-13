@@ -13,13 +13,27 @@ type PostPageProps = {
 }
 
 function renderInlineText(text: string) {
-  return text.split(/(\*[^*]+\*)/g).map((part, index) =>
-    part.startsWith("*") && part.endsWith("*") ? (
-      <em key={index}>{part.slice(1, -1)}</em>
-    ) : (
-      part
-    ),
-  )
+  return text.split(/(\*[^*]+\*|https?:\/\/\S+)/g).map((part, index) => {
+    if (part.startsWith("*") && part.endsWith("*")) {
+      return <em key={index}>{part.slice(1, -1)}</em>
+    }
+
+    if (part.startsWith("http://") || part.startsWith("https://")) {
+      return (
+        <a
+          key={index}
+          href={part}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="font-semibold text-primary underline underline-offset-4"
+        >
+          Watch on Instagram
+        </a>
+      )
+    }
+
+    return part
+  })
 }
 
 export function generateStaticParams() {
