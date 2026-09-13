@@ -28,6 +28,104 @@ export type BlogPost = {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "five-lessons-the-pole-taught-me",
+    title: "Five Lessons the Pole Taught Me",
+    excerpt: "Roller pole and pole dancing challenged far more than my strength—they changed how I saw my body, my age, and the rules I had been following without question.",
+    date: "September 13, 2026",
+    category: "Lessons from the Book",
+    readTime: "4 min read",
+    image: "/images/five-lessons-the-pole-taught-me.jpg",
+    imageAlt: "Neon-lit pole and roller skates with the words Lessons from The Whistler’s Daughter: Five Lessons the Pole Taught Me.",
+    imageCaption: "Lessons from The Whistler’s Daughter.",
+    content: [
+      {
+        type: "paragraph",
+        text: "When I signed up for pole dancing—and later roller pole, a combination of roller skating and pole dancing—I thought I was learning a new sport. I did not expect it to challenge so many of my ideas about how a woman my age should look, move, or behave."
+      },
+      {
+        type: "paragraph",
+        text: "Walking into class meant being decades older than many of the women around me. It meant facing mirrors, bare skin, awkward attempts, and all the judgments I had absorbed about aging bodies—including my own."
+      },
+      {
+        type: "paragraph",
+        text: "But the pole did not care about my age, my wrinkles, or whether I looked the way I thought I should. It asked only whether I was willing to try, to trust my body, and to return after the inevitable bruises."
+      },
+      {
+        type: "paragraph",
+        text: "Somewhere between the spins, the falls, and the laughter, I stopped treating my body as something that needed to pass inspection. I began seeing it as a partner—imperfect, determined, and still capable of surprising me."
+      },
+      {
+        type: "paragraph",
+        text: "Watch the video on Instagram: https://www.instagram.com/p/DdOs6xCuinZ/"
+      },
+      {
+        type: "heading",
+        text: "Lesson 1: The Mirror Is a Tool, Not a Verdict"
+      },
+      {
+        type: "quote",
+        text: "I stopped asking, “Do I look okay?” I started asking, “Am I doing the move?”"
+      },
+      {
+        type: "paragraph",
+        text: "In pole class, mirrors are everywhere. At first, I saw them as judges, reflecting every insecurity back at me. Eventually, I learned to use the mirror for what it was meant to do: help me correct my grip, my posture, and my technique. The mirror became information—not a verdict on my worth."
+      },
+      {
+        type: "heading",
+        text: "Lesson 2: Your Body Is Not a Problem to Fix"
+      },
+      {
+        type: "quote",
+        text: "I stopped seeing flaws and started seeing effort. My body became proof of what I could still do."
+      },
+      {
+        type: "paragraph",
+        text: "I had spent years noticing what my body lacked or how it had changed. Pole taught me to notice what it was doing: holding, reaching, balancing, and trying again. Strength did not always look the way I expected, but it was there."
+      },
+      {
+        type: "heading",
+        text: "Lesson 3: Borrow Someone Else’s Belief"
+      },
+      {
+        type: "quote",
+        text: "A great teacher does not just teach skills. She helps you see what you are capable of."
+      },
+      {
+        type: "paragraph",
+        text: "There were moves I was certain I could not do until an instructor calmly acted as if I could. Sometimes we need someone else to hold the belief for us until we are strong enough to claim it ourselves."
+      },
+      {
+        type: "heading",
+        text: "Lesson 4: Be Seen in the Body You Have"
+      },
+      {
+        type: "quote",
+        text: "Not the body you wish you had. The one that is here—flawed, strong, and still trying."
+      },
+      {
+        type: "paragraph",
+        text: "Showing up did not require me to become younger, smoother, thinner, or less self-conscious first. Confidence was not the price of admission. Confidence was something I slowly earned by showing up exactly as I was."
+      },
+      {
+        type: "heading",
+        text: "Lesson 5: Write Your Own Rules"
+      },
+      {
+        type: "quote",
+        text: "Other people’s opinions do not get to choreograph my life. I do."
+      },
+      {
+        type: "paragraph",
+        text: "Pole dancing was not something I imagined a woman my age was supposed to do—which became one of the best reasons to try it. So many of the rules we live by were never actually written for us. We inherited them, obeyed them, and forgot to ask whether they still belonged in our lives."
+      },
+      {
+        type: "paragraph",
+        text: "The pole taught me that freedom is not looking perfect or feeling fearless. It is letting yourself be seen while you are still learning—and deciding that your life belongs to you."
+      }
+    ]
+  },
+
+  {
     slug: "prologue-whistle-for-me-kippy",
     title: "Prologue: Whistle for Me, Kippy",
     excerpt: "The diagnosis said my body wanted to contract. My father had spent a lifetime teaching me to keep trying anyway.",
