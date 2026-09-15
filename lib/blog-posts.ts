@@ -28,6 +28,104 @@ export type BlogPost = {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "what-the-wind-taught-me",
+    title: "What the Wind Taught Me",
+    excerpt: "Kiteboarding, snowkiting, windsurfing, and other wind sports taught me to listen, adjust, let go when necessary, and keep moving.",
+    date: "September 15, 2026",
+    category: "Lessons from the Book",
+    readTime: "5 min read",
+    image: "/images/kiteboarding-wind-lessons.jpg",
+    imageAlt: "Kippy kiteboarding across the water beneath a cloudy blue sky.",
+    imageCaption: "The wind never learned to obey me. I learned to listen, adjust, let go when necessary, and keep moving.",
+    content: [
+      {
+        type: "paragraph",
+        text: "Lessons from kiteboarding, landboarding, snowboarding, snowkiting, wingboarding, and windsurfing."
+      },
+      {
+        type: "quote",
+        text: "The wind never learned to obey me. I learned to listen, adjust, let go when necessary, and keep moving."
+      },
+      {
+        type: "paragraph",
+        text: "Across the water, land, and snow, wind sports taught me that progress rarely comes from overpowering the conditions. It comes from paying attention, making small corrections, and learning when to hold on, when to adapt, and when to let go. These lessons mattered not only in sport, but also in the way I learned to live with muscular dystrophy."
+      },
+      {
+        type: "heading",
+        text: "Lesson 1: Work With the Force You Cannot Control"
+      },
+      {
+        type: "paragraph",
+        text: "I could not command the wind to blow harder, soften, or arrive when I was ready. I could only adjust my kite, sail, balance, and direction."
+      },
+      {
+        type: "quote",
+        text: "What I carried forward: Life is much the same. Strength does not always come from fighting what is happening. Sometimes it comes from learning how to move with it."
+      },
+      {
+        type: "heading",
+        text: "Lesson 2: Being Bad at Something Is Not the Same as Failing"
+      },
+      {
+        type: "paragraph",
+        text: "I face-planted while kiteboarding, repeatedly caught an edge while snowboarding, and made plenty of clumsy passes while snowkiting."
+      },
+      {
+        type: "quote",
+        text: "What I carried forward: I learned that I did not have to be graceful, or even particularly good, to get something valuable from an experience. Sometimes success is simply staying curious long enough to discover whether a sport belongs in your life."
+      },
+      {
+        type: "heading",
+        text: "Lesson 3: Technique Can Accomplish What Strength Cannot"
+      },
+      {
+        type: "paragraph",
+        text: "Windsurfing looked as though it required enormous strength. Once I learned to use leverage, timing, my legs, and my core, the heavy sail became manageable."
+      },
+      {
+        type: "quote",
+        text: "What I carried forward: That lesson mattered with muscular dystrophy: I did not always need a stronger body. Sometimes I needed a smarter way of using the body I had."
+      },
+      {
+        type: "heading",
+        text: "Lesson 4: Adapt What You Can and Know When Enough Is Enough"
+      },
+      {
+        type: "paragraph",
+        text: "When oversized snowboard boots and poor communication made snowkiting nearly impossible, I switched to skis and tried again. When the experience still was not working, I chose not to return for the third day."
+      },
+      {
+        type: "quote",
+        text: "What I carried forward: Persistence does not mean endlessly forcing a bad situation. Sometimes progress means changing your approach. Sometimes it means recognizing that you have given something a fair chance and walking away without calling yourself a quitter."
+      },
+      {
+        type: "heading",
+        text: "Lesson 5: Let Go Before the Wind Carries You Too Far"
+      },
+      {
+        type: "paragraph",
+        text: "Wingboarding felt safer because I could release the wing when the wind became too powerful. But when my wing escaped and I chased it nearly a mile toward danger, I learned how quickly determination can become stubbornness."
+      },
+      {
+        type: "quote",
+        text: "What I carried forward: There is courage in holding on, but there is also courage in letting go, accepting help, and admitting that finishing something by yourself is not worth risking everything."
+      },
+      {
+        type: "heading",
+        text: "The Larger Lesson"
+      },
+      {
+        type: "paragraph",
+        text: "Wind sports taught me that life is not about overpowering every obstacle. It is about paying attention, accepting the conditions, making thoughtful corrections, and continuing toward a future that feels honest."
+      },
+      {
+        type: "quote",
+        text: "Listen. Adjust. Let go when necessary. Keep moving."
+      }
+    ]
+  },
+
+  {
     slug: "five-lessons-the-pole-taught-me",
     title: "Five Lessons the Pole Taught Me",
     excerpt: "Roller pole and pole dancing challenged far more than my strength—they changed how I saw my body, my age, and the rules I had been following without question.",
