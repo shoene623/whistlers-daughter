@@ -22,6 +22,7 @@ export type BlogPost = {
   imageCaption?: string
   imagePortrait?: boolean
   video?: string
+  videoParts?: string[]
   videoPoster?: string
   pinned?: boolean
 }
@@ -134,6 +135,12 @@ export const blogPosts: BlogPost[] = [
     readTime: "4 min read",
     image: "/images/five-lessons-the-pole-taught-me.jpg",
     imageAlt: "Neon-lit pole and roller skates with the words Lessons from The Whistler’s Daughter: Five Lessons the Pole Taught Me.",
+    videoParts: [
+      "/videos/five-lessons-pole/part-00",
+      "/videos/five-lessons-pole/part-01",
+      "/videos/five-lessons-pole/part-02",
+      "/videos/five-lessons-pole/part-03",
+    ],
     imageCaption: "Lessons from The Whistler’s Daughter.",
     content: [
       {

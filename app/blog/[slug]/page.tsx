@@ -6,6 +6,7 @@ import { notFound } from "next/navigation"
 import { SiteFooter } from "@/components/site-footer"
 import { SiteHeader } from "@/components/site-header"
 import { BlogComments } from "@/components/blog-comments"
+import { ChunkedVideo } from "@/components/chunked-video"
 import { blogPosts, getBlogPost } from "@/lib/blog-posts"
 
 type PostPageProps = {
@@ -85,24 +86,19 @@ export default async function PostPage({ params }: PostPageProps) {
             </div>
           </header>
           <div className="mx-auto max-w-3xl px-4 py-14 md:px-6 md:py-20">
-            {post.video && (
+            {(post.video || post.videoParts?.length) && (
               <figure className="mb-12">
                 <div className="mx-auto max-w-md overflow-hidden rounded-2xl border border-border bg-black shadow-sm">
-                  <video
-                    controls
-                    playsInline
-                    preload="metadata"
+                  <ChunkedVideo
+                    src={post.video}
+                    parts={post.videoParts}
                     poster={post.videoPoster}
-                    className="aspect-[9/16] h-auto w-full bg-black object-contain"
-                    aria-label={post.title}
-                  >
-                    <source src={post.video} type="video/mp4" />
-                    Your browser does not support the video player.
-                  </video>
+                    title={post.title}
+                  />
                 </div>
               </figure>
             )}
-            {post.image && !post.video && (
+            {post.image && !post.video && !post.videoParts?.length && (
               <figure className="mb-12">
                 <div
                   className={`overflow-hidden rounded-2xl border border-border bg-secondary shadow-sm ${
