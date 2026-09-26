@@ -29,6 +29,53 @@ export type BlogPost = {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "five-things-the-mountains-taught-me",
+    title: "Five Things the Mountains Taught Me",
+    excerpt: "From grief and measured steps to questioning assumptions and looking again, these are five lessons I carried home from the mountains.",
+    date: "September 26, 2026",
+    category: "Lessons from the Book",
+    readTime: "2 min read",
+    image: "/images/mountain-lesson-cover.jpg",
+    imageAlt: "Kippy on a mountain at sunset. Lessons from The Whistler’s Daughter: 5 Things the Mountains Taught Me.",
+    content: [
+      {
+        type: "paragraph",
+        text: "The mountains have given me room to grieve, reasons to slow down, and chances to reconsider the stories I tell myself about other people. These are five lessons I brought back with me."
+      },
+      {
+        type: "image",
+        text: "Lesson 1: Take Your Grief Outside",
+        image: "/images/mountain-lesson-1.jpg",
+        imageAlt: "Lesson 1: Take Your Grief Outside. When I didn’t know where to put my grief, I went where my father always went: into the woods, the thin air and the wild."
+      },
+      {
+        type: "image",
+        text: "Lesson 2: Find a Pace You Can Hold",
+        image: "/images/mountain-lesson-2.jpg",
+        imageAlt: "Lesson 2: Find a Pace You Can Hold. The summit was reached in tiny, measured steps. You do not have to move fast to keep moving upward."
+      },
+      {
+        type: "image",
+        text: "Lesson 3: Your Assumptions Are Not Facts",
+        image: "/images/mountain-lesson-3.jpg",
+        imageAlt: "Lesson 3: Your Assumptions Are Not Facts. I decided they saw me as old, uncool and not tough enough. Most of that distance was only chatter in my own head."
+      },
+      {
+        type: "image",
+        text: "Lesson 4: When Something Feels Wrong, Look Again",
+        image: "/images/mountain-lesson-4.jpg",
+        imageAlt: "Lesson 4: When Something Feels Wrong, Look Again. I saw a man who did not like me. I should have seen a person who might be in trouble."
+      },
+      {
+        type: "image",
+        text: "Lesson 5: Think of Yourself Less",
+        image: "/images/mountain-lesson-5.jpg",
+        imageAlt: "Lesson 5: The lesson isn’t to think less of yourself. It’s to think of yourself less."
+      }
+    ]
+  },
+
+  {
     slug: "what-the-wind-taught-me",
     title: "What the Wind Taught Me",
     excerpt: "Kiteboarding, snowkiting, windsurfing, and other wind sports taught me to listen, adjust, let go when necessary, and keep moving.",
