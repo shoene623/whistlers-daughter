@@ -7,6 +7,7 @@ import { SiteFooter } from "@/components/site-footer"
 import { SiteHeader } from "@/components/site-header"
 import { BlogComments } from "@/components/blog-comments"
 import { ChunkedVideo } from "@/components/chunked-video"
+import { LaunchBookGraphic } from "@/components/launch-book-graphic"
 import { blogPosts, getBlogPost } from "@/lib/blog-posts"
 
 type PostPageProps = {
@@ -105,7 +106,12 @@ export default async function PostPage({ params }: PostPageProps) {
                 </div>
               </figure>
             )}
-            {post.image && !post.video && !post.videoParts?.length && (
+            {post.slug === "the-whistlers-daughter-is-here" && (
+              <figure className="mb-12 overflow-hidden rounded-2xl border border-border shadow-sm">
+                <LaunchBookGraphic />
+              </figure>
+            )}
+            {post.image && post.slug !== "the-whistlers-daughter-is-here" && !post.video && !post.videoParts?.length && (
               <figure className="mb-12">
                 <div
                   className={`overflow-hidden rounded-2xl border border-border bg-secondary shadow-sm ${
