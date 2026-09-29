@@ -20,6 +20,13 @@ function renderInlineText(text: string) {
     }
 
     if (part.startsWith("http://") || part.startsWith("https://")) {
+      const url = new URL(part)
+      const label =
+        url.hostname.includes("barnesandnoble.com") ? "Shop at Barnes & Noble" :
+        url.hostname.includes("amazon.com") ? "Shop at Amazon" :
+        url.hostname.includes("amplifyaudiobooks.com") ? "Listen on AMPlify Audiobooks" :
+        url.hostname.includes("instagram.com") ? "Watch on Instagram" :
+        url.hostname.replace(/^www\\./, "")
       return (
         <a
           key={index}
@@ -28,7 +35,7 @@ function renderInlineText(text: string) {
           rel="noopener noreferrer"
           className="font-semibold text-primary underline underline-offset-4"
         >
-          Watch on Instagram
+          {label}
         </a>
       )
     }
