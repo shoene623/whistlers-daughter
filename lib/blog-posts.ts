@@ -29,6 +29,52 @@ export type BlogPost = {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "the-whistlers-daughter-is-here",
+    title: "The Whistler’s Daughter Is Here",
+    excerpt: "My book is available today in print and audio. I’m so excited to finally share it with you.",
+    date: "September 29, 2026",
+    category: "Book News",
+    readTime: "1 min read",
+    image: "/book-cover.jpg",
+    imagePortrait: true,
+    imageAlt: "Cover of The Whistler’s Daughter by Christine Kippy Hoene.",
+    content: [
+      {
+        type: "paragraph",
+        text: "The Whistler’s Daughter is AVAILABLE TODAY! I can hardly believe I get to write those words."
+      },
+      {
+        type: "paragraph",
+        text: "You can buy the print book today from Barnes & Noble or Amazon. The audiobook is available today from AMPlify Audiobooks, and it will be available on Audible in about two weeks."
+      },
+      {
+        type: "paragraph",
+        text: "Barnes & Noble: https://www.barnesandnoble.com/s/9781963678321"
+      },
+      {
+        type: "paragraph",
+        text: "Amazon: https://www.amazon.com/s?k=9781963678321"
+      },
+      {
+        type: "paragraph",
+        text: "AMPlify Audiobooks: https://amplifyaudiobooks.com/book/untitled-audiobook-audiobook-9fda4fb4-7360-4779-92b8-da0f628a0d21"
+      },
+      {
+        type: "paragraph",
+        text: "This book has been part of my life for so long that seeing it out in the world feels a little unreal. I’m excited, a little nervous, and grateful to everyone who encouraged me along the way."
+      },
+      {
+        type: "paragraph",
+        text: "I hope you enjoy the stories, laugh with me in a few places, and finish feeling curious about what might still be possible in your own life."
+      },
+      {
+        type: "paragraph",
+        text: "If you read or listen, I would love to hear what stays with you. Thank you for sharing this moment with me!"
+      }
+    ]
+  },
+
+  {
     slug: "five-things-the-mountains-taught-me",
     title: "Five Things the Mountains Taught Me",
     excerpt: "From grief and measured steps to questioning assumptions and looking again, these are five lessons I carried home from the mountains.",
