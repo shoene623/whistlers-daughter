@@ -4,6 +4,7 @@ import Link from "next/link"
 import { ArrowRight } from "lucide-react"
 import { SiteFooter } from "@/components/site-footer"
 import { SiteHeader } from "@/components/site-header"
+import { LaunchBookGraphic } from "@/components/launch-book-graphic"
 import { blogPosts } from "@/lib/blog-posts"
 
 export const metadata: Metadata = {
@@ -51,17 +52,21 @@ export default function BlogPage() {
                       post.imagePortrait ? "p-6 md:p-8" : ""
                     }`}
                   >
-                    <Image
-                      src={post.image}
-                      alt={post.imageAlt ?? ""}
-                      width={post.imagePortrait ? 694 : 1200}
-                      height={post.imagePortrait ? 878 : 675}
-                      className={
-                        post.imagePortrait
-                          ? "mx-auto h-auto max-h-[520px] w-auto object-contain transition-transform duration-500 group-hover:scale-[1.02]"
-                          : "aspect-[16/9] w-full object-cover transition-transform duration-500 group-hover:scale-[1.02]"
-                      }
-                    />
+                    {post.slug === "the-whistlers-daughter-is-here" ? (
+                      <LaunchBookGraphic compact />
+                    ) : (
+                      <Image
+                        src={post.image}
+                        alt={post.imageAlt ?? ""}
+                        width={post.imagePortrait ? 694 : 1200}
+                        height={post.imagePortrait ? 878 : 675}
+                        className={
+                          post.imagePortrait
+                            ? "mx-auto h-auto max-h-[520px] w-auto object-contain transition-transform duration-500 group-hover:scale-[1.02]"
+                            : "aspect-[16/9] w-full object-cover transition-transform duration-500 group-hover:scale-[1.02]"
+                        }
+                      />
+                    )}
                   </Link>
                 )}
                 <div className="p-7 md:p-10">
