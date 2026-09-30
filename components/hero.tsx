@@ -1,5 +1,6 @@
 import Image from "next/image"
 import { BookOpen, Star } from "lucide-react"
+import { AMAZON_URL } from "@/lib/constants"
 
 export function Hero() {
   return (
@@ -11,7 +12,7 @@ export function Hero() {
         <div className="order-2 md:order-1">
           <span className="inline-flex items-center gap-2 rounded-full bg-secondary px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-secondary-foreground">
             <Star className="size-3.5 fill-accent text-accent" />
-            A New Memoir
+            Now Available
           </span>
 
           <h1 className="mt-6 text-balance font-serif text-4xl font-bold leading-[1.05] tracking-tight text-foreground md:text-6xl">
@@ -30,11 +31,13 @@ export function Hero() {
 
           <div className="mt-8 flex flex-wrap items-center gap-4">
             <a
-              href="#buy"
+              href={AMAZON_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-full bg-accent px-7 py-3.5 text-sm font-semibold text-accent-foreground shadow-lg shadow-accent/20 transition-transform hover:scale-105"
             >
               <BookOpen className="size-4" />
-              Join the List
+              Buy on Amazon
             </a>
             <a
               href="#book"

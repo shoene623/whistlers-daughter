@@ -41,7 +41,7 @@ export function SiteHeader() {
             href="/#buy"
             className="rounded-full bg-accent px-5 py-2 text-sm font-semibold text-accent-foreground transition-transform hover:scale-105"
           >
-            Join the List
+            Buy the Book
           </Link>
         </nav>
 
@@ -74,7 +74,7 @@ export function SiteHeader() {
               onClick={() => setOpen(false)}
               className="rounded-full bg-accent px-5 py-2.5 text-center text-sm font-semibold text-accent-foreground"
             >
-              Join the List
+              Buy the Book
             </Link>
           </div>
         </nav>

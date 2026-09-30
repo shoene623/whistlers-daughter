@@ -70,7 +70,7 @@ export async function joinWaitlist(
 
     return {
       status: "success",
-      message: "You're on the list! We'll email you when the book is available.",
+      message: "You're on the list! We'll keep you posted on news and events.",
     }
   } catch (error) {
     console.error("[v0] waitlist insert failed:", error)

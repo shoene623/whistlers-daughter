@@ -3,8 +3,9 @@
 import { useActionState } from "react"
 import { useFormStatus } from "react-dom"
 import Image from "next/image"
-import { Check, Mail, AlertCircle } from "lucide-react"
+import { Check, Mail, AlertCircle, ShoppingCart } from "lucide-react"
 import { joinWaitlist, type WaitlistState } from "@/app/actions/waitlist"
+import { AMAZON_URL } from "@/lib/constants"
 
 const initialState: WaitlistState = { status: "idle", message: "" }
 
@@ -16,7 +17,7 @@ function SubmitButton() {
       disabled={pending}
       className="rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-transform hover:scale-105 disabled:cursor-not-allowed disabled:opacity-60"
     >
-      {pending ? "Joining..." : "Notify Me"}
+      {pending ? "Joining..." : "Sign Up"}
     </button>
   )
 }
@@ -39,17 +40,31 @@ export function BuySection() {
 
         <div>
           <h2 className="text-balance font-serif text-3xl font-bold text-foreground md:text-4xl">
-            Be the first to read The Whistler&apos;s Daughter
+            The Whistler&apos;s Daughter is out now
           </h2>
           <p className="mt-4 text-pretty leading-relaxed text-muted-foreground">
-            Join the list to be the first to know when the book is available.
+            Get your copy today and follow Kippy&apos;s adventures from the
+            first page.
           </p>
 
-          <div className="mt-6">
+          <a
+            href={AMAZON_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-6 inline-flex items-center gap-2 rounded-full bg-accent px-7 py-3.5 text-sm font-semibold text-accent-foreground shadow-lg shadow-accent/20 transition-transform hover:scale-105"
+          >
+            <ShoppingCart className="size-4" />
+            Buy on Amazon
+          </a>
+
+          <div className="mt-10 border-t border-border pt-6">
             <h3 className="flex items-center gap-2 font-semibold text-foreground">
               <Mail className="size-4 text-primary" />
               Join the mailing list
             </h3>
+            <p className="mt-1 text-sm text-muted-foreground">
+              Get news about events, readings, and what Kippy tries next.
+            </p>
 
             {state.status === "success" ? (
               <p className="mt-3 flex items-center gap-2 text-sm font-medium text-primary">
