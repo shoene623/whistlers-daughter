@@ -29,6 +29,85 @@ export type BlogPost = {
 
 export const blogPosts: BlogPost[] = [
   {
+  "slug": "over-the-moon-and-full-of-gratitude",
+  "title": "Over the Moon—and Full of Gratitude",
+  "excerpt": "The reviews for The Whistler’s Daughter are coming in so strongly. Hearing how the book is touching readers has left me thrilled, a little amazed, and deeply grateful.",
+  "date": "October 10, 2026",
+  "category": "Book News",
+  "readTime": "4 min read",
+  "image": "/images/margaret-reader-review.jpg",
+  "imagePortrait": true,
+  "imageAlt": "Gold and navy graphic featuring Margaret W.’s enthusiastic review of The Whistler’s Daughter, including her decision to buy more copies for friends.",
+  "imageCaption": "Thank you, Margaret, and every reader who has taken the time to share what the book meant to you.",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "I’m over the moon. Truly. The reviews for *The Whistler’s Daughter* are coming in so strongly, and I keep finding myself reading them more than once. Sometimes several times. There is a wonderful mixture of joy, gratitude, and a little bewilderment: Are these beautiful words really about my book?"
+    },
+    {
+      "type": "paragraph",
+      "text": "When you put your life into a book, you hope people will connect with it. But hoping for that and actually hearing from readers are two very different experiences. These stories were mine for so long—the adventures, the uncertainty, the laughter, the things I learned the hard way. Now they are out in the world, and other people are finding something of their own in them. That has been one of the most meaningful surprises of this whole experience."
+    },
+    {
+      "type": "paragraph",
+      "text": "Of course, I’m thrilled by the incredible reviews. Who wouldn’t be? But what moves me most is what people are saying within them. To know that the book is leaving readers feeling encouraged, uplifted, or curious about what might still be possible in their own lives means more to me than I can easily explain."
+    },
+    {
+      "type": "paragraph",
+      "text": "Margaret’s review, pictured above, stopped me in my tracks. She described the book as beautifully written, deeply personal, and inspiring. Then she said she had bought more copies to give to friends because she wanted to share the inspiration. I read that part again. And again."
+    },
+    {
+      "type": "paragraph",
+      "text": "The thought that someone would finish my book and immediately think of another person they wanted to share it with is an extraordinary gift. A book is such a personal recommendation. You are essentially saying, “This meant something to me, and I think it might mean something to you, too.” Margaret, thank you. Your words made me so happy, and your generosity touched me deeply."
+    },
+    {
+      "type": "paragraph",
+      "text": "I wrote *The Whistler’s Daughter* hoping that my experiences might encourage someone else to say yes to something they had been putting off, to be willing to be a beginner, or to question an assumption about what they could do. Living with muscular dystrophy has made those questions deeply personal for me. Trying more than forty sports gave me plenty of opportunities to discover how much I still had to learn—about the sports and about myself."
+    },
+    {
+      "type": "paragraph",
+      "text": "There were awkward attempts, frustrations, moments of fear, and plenty of reasons to laugh. Sharing all of that meant letting people see more than the adventures. It meant sharing the doubts and the less polished parts, too. Hearing that readers connect with the honesty is especially meaningful. Those were sometimes the hardest things to put on the page."
+    },
+    {
+      "type": "paragraph",
+      "text": "We all come to a book carrying our own experiences. Your challenges may look very different from mine, and your next adventure may have nothing to do with a mountain, a rope, or a pair of skis. It might be taking a class, starting a project, asking for help, or returning to something you once loved. My hope is that somewhere in these pages you find a little encouragement for whatever matters to you."
+    },
+    {
+      "type": "paragraph",
+      "text": "To everyone who has bought the book, read it, listened to it, sent me a message, or taken the time to leave an honest review: thank you. I know your time is valuable. Choosing to spend some of it with my story is something I deeply appreciate. Taking another few minutes to tell me or other readers what you thought makes that gift even bigger."
+    },
+    {
+      "type": "paragraph",
+      "text": "And to those of you recommending it to friends, sharing a post, or giving someone a copy, please know how much that means to me. You are helping this book reach people I could never reach on my own. Each thoughtful recommendation gives the story another chance to find someone who might connect with it."
+    },
+    {
+      "type": "paragraph",
+      "text": "I also feel enormous gratitude toward the people who encouraged me before there was a finished book to hold. Thank you for believing this story was worth telling and for helping me keep going. Being able to share these reader responses with you makes the excitement even sweeter."
+    },
+    {
+      "type": "paragraph",
+      "text": "I don’t think I fully understood how moving it would be to hear back from readers. I knew I would be excited to see the book published. I didn’t know how often I would sit with someone’s words and think, “Wow. It reached them.”"
+    },
+    {
+      "type": "paragraph",
+      "text": "So today, I’m letting myself enjoy this. I’m thrilled. I’m touched. I’m still a little amazed. And I’m incredibly grateful that *The Whistler’s Daughter* is having an impact on people."
+    },
+    {
+      "type": "paragraph",
+      "text": "Thank you for welcoming my story into your lives and for sharing your own responses with me. If you’ve read or listened, I would love to know what stayed with you—a story, a lesson, a laugh, or a moment that felt familiar. Those connections are making this new chapter very special."
+    },
+    {
+      "type": "paragraph",
+      "text": "With a very full heart,\nKippy"
+    },
+    {
+      "type": "paragraph",
+      "text": "You can find *The Whistler’s Daughter* on Amazon: https://a.co/d/03KDSWF3"
+    }
+  ]
+},
+
+  {
     slug: "the-whistlers-daughter-is-here",
     title: "The Whistler’s Daughter Is Here",
     excerpt: "My book is available today in print and audio. I’m so excited to finally share it with you.",
