@@ -28,6 +28,22 @@ export type BlogPost = {
 }
 
 export const blogPosts: BlogPost[] = [
+{
+  "slug": "two-weeks-of-adventure-in-utah",
+  "title": "Two Weeks of Adventure in Utah",
+  "excerpt": "Two weeks of mountain biking, canyoneering, rock climbing, and hiking with Marc—red rocks, dusty gear, and huge smiles.",
+  "date": "October 15, 2026",
+  "category": "Adventures",
+  "readTime": "1 min read",
+  "image": "/images/marc-and-kippy-utah.jpg",
+  "imageAlt": "Marc and Kippy standing together among sweeping red sandstone formations.",
+  "imagePortrait": true,
+  "paragraphs": [
+    "Marc and I just spent two weeks in Utah doing our favorite things—mountain biking, canyoneering, rock climbing, and hiking! 🚵‍♀️🧗‍♀️🥾",
+    "There’s something about those red rocks, wide-open spaces, and beautiful trails that makes me want to keep exploring. We came home with tired legs, dusty gear, and huge smiles.",
+    "Feeling grateful for the adventures I can still say yes to—and for having Marc beside me to share them. ❤️"
+  ]
+},
   {
   "slug": "over-the-moon-and-full-of-gratitude",
   "title": "Over the Moon—and Full of Gratitude",
