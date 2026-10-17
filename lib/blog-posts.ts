@@ -29,6 +29,20 @@ export type BlogPost = {
 
 export const blogPosts: BlogPost[] = [
 {
+  "slug": "on-the-radio-with-frank-and-jill",
+  "title": "On the Radio with Frank and Jill",
+  "excerpt": "What a fun experience joining Jill Farmer and Frank Cusumano on The Big 550 KTRS! Listen to the show here.",
+  "date": "October 17, 2026",
+  "category": "Book News",
+  "readTime": "1 min read",
+  "paragraphs": [
+    "What a fun experience being on the radio with Jill Farmer and Frank Cusumano on The Big 550 KTRS! Thank you both for welcoming me and giving me the chance to share The Whistler’s Daughter.",
+    "One of the best parts of putting this book into the world has been the opportunity to connect with people and share the adventures, laughter, and little steps that have shaped my life.",
+    "Jill, Frank, and the team at The Big 550—thank you for having me! I’m so grateful for the chance to bring my story to your listeners.",
+    "Missed the show? You can listen here: https://soundcloud.com/550ktrs/the-frank-and-jill-show-10-12"
+  ]
+},
+{
   "slug": "two-weeks-of-adventure-in-utah",
   "title": "Two Weeks of Adventure in Utah",
   "excerpt": "Two weeks of mountain biking, canyoneering, rock climbing, and hiking with Marc—red rocks, dusty gear, and huge smiles.",
