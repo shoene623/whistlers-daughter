@@ -26,15 +26,35 @@ export function SiteFooter() {
             </a>
           </div>
 
-          <a
-            href="https://www.facebook.com/people/The-Whistlers-Daughter/61591921524061/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 rounded-full border border-border bg-background px-6 py-3 text-sm font-semibold text-foreground transition-colors hover:bg-primary hover:text-primary-foreground"
-          >
-            <ExternalLink className="size-4" />
-            Follow on Facebook
-          </a>
+          <div className="flex flex-wrap justify-center gap-3">
+            <a
+              href="https://www.youtube.com/@TheWhistlersDaughter"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-full border border-border bg-background px-6 py-3 text-sm font-semibold text-foreground transition-colors hover:bg-primary hover:text-primary-foreground"
+            >
+              <ExternalLink className="size-4" aria-hidden="true" />
+              Follow on YouTube
+            </a>
+            <a
+              href="https://www.facebook.com/TheWhistlersDaughter"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-full border border-border bg-background px-6 py-3 text-sm font-semibold text-foreground transition-colors hover:bg-primary hover:text-primary-foreground"
+            >
+              <ExternalLink className="size-4" aria-hidden="true" />
+              Follow on Facebook
+            </a>
+            <a
+              href="https://www.instagram.com/thewhistlersdaughter/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-full border border-border bg-background px-6 py-3 text-sm font-semibold text-foreground transition-colors hover:bg-primary hover:text-primary-foreground"
+            >
+              <ExternalLink className="size-4" aria-hidden="true" />
+              Follow on Instagram
+            </a>
+          </div>
 
           <p className="max-w-md text-pretty text-sm leading-relaxed text-muted-foreground">
             Stay curious about what&apos;s still possible.
