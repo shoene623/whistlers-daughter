@@ -14,6 +14,18 @@ export function SiteFooter() {
             </p>
           </div>
 
+          <div>
+            <p className="text-sm text-muted-foreground">
+              Media, podcast, and general inquiries
+            </p>
+            <a
+              href="mailto:kippy@thewhistlersdaughter.net"
+              className="mt-2 inline-block break-all text-sm font-semibold text-foreground underline underline-offset-4 transition-colors hover:text-primary"
+            >
+              kippy@thewhistlersdaughter.net
+            </a>
+          </div>
+
           <a
             href="https://www.facebook.com/people/The-Whistlers-Daughter/61591921524061/"
             target="_blank"
