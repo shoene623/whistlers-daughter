@@ -29,6 +29,27 @@ export type BlogPost = {
 
 export const blogPosts: BlogPost[] = [
 {
+  "slug": "from-my-heart-thank-you",
+  "title": "From My Heart, Thank You",
+  "excerpt": "A #1 Top New Release, 55 five-star reviews, and a very full heart. Thank you for welcoming my story into your lives.",
+  "date": "October 30, 2026",
+  "category": "Book News",
+  "readTime": "2 min read",
+  "image": "/images/thank-you-55-reviews.jpg",
+  "imageAlt": "Thank-you graphic for The Whistler’s Daughter celebrating a #1 Top New Release in Genetic Health on Amazon and 55 five-star reviews.",
+  "paragraphs": [
+    "*The Whistler’s Daughter* is a #1 Top New Release in Genetic Health on Amazon—okay, it’s a cozy little category 😄—and now has 55 five-star reviews! I’m overwhelmed by your love and support.",
+    "The response has been more than I ever dreamed of, and very different from what I imagined. Sharing this book has been an emotional roller coaster. There were parts of my story I felt ashamed to tell. And even after it was written, I kept seeing all the ways I could have written it better.",
+    "Then your reviews started coming in.",
+    "You’ve described the book as inspiring, funny, heart-touching, and a story that stays with you long after the last page. Reading those words fills my heart. Things I was afraid to share are becoming the very things readers connect with. That has meant more to me than any ranking ever could.",
+    "I hoped my story might encourage someone to try something new, find a little humor in a hard moment, or see more possibilities in their own life. Hearing that it has done that makes putting myself out there feel worthwhile.",
+    "Thank you for reading, for telling me what the book meant to you, and for passing it along to friends.",
+    "If you’ve enjoyed *The Whistler’s Daughter*, please share this post so it can reach someone who might need it. And if I may ask one more favor, an honest Amazon review would mean so much. Even a few sentences can help another reader decide to give it a chance.",
+    "With a very full heart and much gratitude,",
+    "Kippy"
+  ]
+},
+{
   "slug": "on-the-radio-with-frank-and-jill",
   "title": "On the Radio with Frank and Jill",
   "excerpt": "What a fun experience joining Jill Farmer and Frank Cusumano on The Big 550 KTRS! Listen to the show here.",
