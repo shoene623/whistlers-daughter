@@ -29,6 +29,23 @@ export type BlogPost = {
 
 export const blogPosts: BlogPost[] = [
 {
+  "slug": "pickleball-in-2017",
+  "title": "Pickleball in 2017",
+  "excerpt": "An old pickleball photo made me miss my younger self and think about why I still love to play.",
+  "date": "November 6, 2026",
+  "category": "Adventures",
+  "readTime": "1 min read",
+  "image": "/images/pickleball-2017.jpg",
+  "imageAlt": "Kippy’s pickleball photo from 2017.",
+  "imagePortrait": true,
+  "paragraphs": [
+    "This picture was taken in 2017, when pickleball was barely on the map. By the time it became a thing, vitelliform macular dystrophy had changed my vision. It got harder to judge where the ball was, and I started whiffing a whole lot more.",
+    "I know I’m not very good anymore. And looking at this photo, I miss my younger self! I miss the better eyesight, sure. I miss being younger, too. And yet, if I had to choose, I think I’d keep the life I have now and everything I’ve learned along the way.",
+    "Although, really, could I have both?",
+    "Do I still play pickleball? Yep. Do I still enjoy it? I do! I love the adrenaline, the camaraderie, and the laughter. Turns out I love all of that a whole lot more than I mind swinging right through the air where I was *sure* the ball would be."
+  ]
+},
+{
   "slug": "from-my-heart-thank-you",
   "title": "From My Heart, Thank You",
   "excerpt": "A #1 Top New Release, 55 five-star reviews, and a very full heart. Thank you for welcoming my story into your lives.",
